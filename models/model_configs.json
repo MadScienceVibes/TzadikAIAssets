@@ -1,0 +1,978 @@
+{
+  "rashi": {
+    "model": "/models/new_rashi.glb",
+    "detection": {
+      "scanHigh": 0.95,
+      "scanLow": 0.85,
+      "xFaceRange": 0.03,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.02,
+      "mouthXNudge": -0.01,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.025,
+      "radiusY": 0.015,
+      "radiusZ": 0.012,
+      "outerMul": 1.5
+    },
+    "scale": 0.025,
+    "polygonOffset": 4,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.1, "dz": 0.07 },
+        "lower": { "dy": 0.1, "dz": 0.07 },
+        "corner": { "dxSign": "pinch", "dx": 0.07 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.06 },
+        "lower": { "dy": 0.06 },
+        "corner": { "dxSign": "wide", "dx": 0.3 }
+      },
+      "viseme_C": {
+        "upper": { "dy": 0.05 },
+        "lower": { "dy": -0.1 }
+      },
+      "viseme_D": {
+        "upper": { "dy": 0.04 },
+        "lower": { "dy": -0.1 },
+        "corner": { "dxSign": "wide", "dx": 0.02 }
+      },
+      "viseme_E": {
+        "upper": { "dy": 0.03, "dz": 0.02 },
+        "lower": { "dy": -0.08, "dz": 0.01 },
+        "corner": { "dxSign": "pinch", "dx": 0.02 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.17, "dy": -0.03 },
+        "lower": { "dz": 0.17, "dy": 0.03 },
+        "corner": { "dxSign": "pinch", "dx": 0.28, "dz": 0.1 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.015 },
+        "lower": { "dy": 0.06, "dz": -0.04 }
+      },
+      "viseme_H": {
+        "upper": { "dy": 0.03 },
+        "lower": { "dy": -0.06 }
+      }
+    }
+  },
+  "rabbi_akiva": {
+    "model": "/models/Meshy_AI_rabbi_akiva_0131194026_texture.glb",
+    "detection": {
+      "method": "fixed_percentage",
+      "mouthYPercent": 0.893,
+      "xFaceRange": 0.1,
+      "mouthXNudge": 0,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.025,
+      "radiusY": 0.018,
+      "radiusZ": 0.02,
+      "outerMul": 1.5
+    },
+    "scale": 0.02,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.15, "dz": 0.1 },
+        "lower": { "dy": 0.15, "dz": 0.1 },
+        "corner": { "dxSign": "pinch", "dx": 0.1 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "lower": { "dy": -0.17 }
+      },
+      "viseme_D": {
+        "lower": { "dy": -0.25 },
+        "corner": { "dxSign": "wide", "dx": 0.1 }
+      },
+      "viseme_E": {
+        "lower": { "dy": -0.2, "dz": 0.05 },
+        "corner": { "dxSign": "pinch", "dx": 0.12 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.25, "dy": -0.05 },
+        "lower": { "dz": 0.25, "dy": 0.05 },
+        "corner": { "dxSign": "pinch", "dx": 0.4, "dz": 0.15 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.03 },
+        "lower": { "dy": 0.2, "dz": -0.15 }
+      },
+      "viseme_H": {
+        "lower": { "dy": -0.13 }
+      }
+    }
+  },
+  "baal_shem_tov": {
+    "model": "/models/Meshy_AI_Ba_al_Shem_Tov_0131193439_texture.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.95,
+      "scanLow": 0.85,
+      "xFaceRange": 0.05,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.015,
+      "mouthXNudge": 0.005,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.02,
+      "radiusY": 0.012,
+      "radiusZ": 0.01,
+      "outerMul": 1.3
+    },
+    "scale": 0.015,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.15, "dz": 0.1 },
+        "lower": { "dy": 0.15, "dz": 0.1 },
+        "corner": { "dxSign": "pinch", "dx": 0.1 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "lower": { "dy": -0.17 }
+      },
+      "viseme_D": {
+        "lower": { "dy": -0.25 },
+        "corner": { "dxSign": "wide", "dx": 0.1 }
+      },
+      "viseme_E": {
+        "lower": { "dy": -0.2, "dz": 0.05 },
+        "corner": { "dxSign": "pinch", "dx": 0.12 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.25, "dy": -0.05 },
+        "lower": { "dz": 0.25, "dy": 0.05 },
+        "corner": { "dxSign": "pinch", "dx": 0.4, "dz": 0.15 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.03 },
+        "lower": { "dy": 0.2, "dz": -0.15 }
+      },
+      "viseme_H": {
+        "lower": { "dy": -0.13 }
+      }
+    }
+  },
+  "rashbi": {
+    "model": "/models/Meshy_AI_rashbi_0131193614_texture.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.85,
+      "scanLow": 0.75,
+      "xFaceRange": 0.05,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.03,
+      "mouthXNudge": 0.005,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.025,
+      "radiusY": 0.025,
+      "radiusZ": 0.03,
+      "outerMul": 1.5
+    },
+    "scale": 0.03,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.15, "dz": 0.1 },
+        "lower": { "dy": 0.15, "dz": 0.1 },
+        "corner": { "dxSign": "pinch", "dx": 0.1 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "lower": { "dy": -0.17 }
+      },
+      "viseme_D": {
+        "lower": { "dy": -0.25 },
+        "corner": { "dxSign": "wide", "dx": 0.1 }
+      },
+      "viseme_E": {
+        "lower": { "dy": -0.2, "dz": 0.05 },
+        "corner": { "dxSign": "pinch", "dx": 0.12 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.25, "dy": -0.05 },
+        "lower": { "dz": 0.25, "dy": 0.05 },
+        "corner": { "dxSign": "pinch", "dx": 0.4, "dz": 0.15 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.03 },
+        "lower": { "dy": 0.2, "dz": -0.15 }
+      },
+      "viseme_H": {
+        "lower": { "dy": -0.13 }
+      }
+    }
+  },
+  "maharal": {
+    "model": "/models/Meshy_AI_Maharal_0209035059_texture.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.95,
+      "scanLow": 0.85,
+      "xFaceRange": 0.05,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.022,
+      "mouthXNudge": -0.003,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.032,
+      "radiusY": 0.01,
+      "radiusZ": 0.015,
+      "outerMul": 1.5
+    },
+    "scale": 0.02,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.15, "dz": 0.1 },
+        "lower": { "dy": 0.15, "dz": 0.1 },
+        "corner": { "dxSign": "pinch", "dx": 0.1 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "upper": { "dy": 0.1 },
+        "lower": { "dy": -0.25 }
+      },
+      "viseme_D": {
+        "upper": { "dy": 0.15 },
+        "lower": { "dy": -0.35 },
+        "corner": { "dxSign": "wide", "dx": 0.1 }
+      },
+      "viseme_E": {
+        "upper": { "dy": 0.1 },
+        "lower": { "dy": -0.3, "dz": 0.05 },
+        "corner": { "dxSign": "pinch", "dx": 0.12 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.25, "dy": -0.05 },
+        "lower": { "dz": 0.25, "dy": 0.05 },
+        "corner": { "dxSign": "pinch", "dx": 0.4, "dz": 0.15 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.03 },
+        "lower": { "dy": 0.2, "dz": -0.15 }
+      },
+      "viseme_H": {
+        "upper": { "dy": 0.08 },
+        "lower": { "dy": -0.2 }
+      }
+    }
+  },
+  "moshe": {
+    "model": "/models/Meshy_AI_Moshe_0205054824_texture.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.95,
+      "scanLow": 0.85,
+      "xFaceRange": 0.03,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.02,
+      "mouthXNudge": -0.008,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.032,
+      "radiusY": 0.008,
+      "radiusZ": 0.015,
+      "outerMul": 1.5
+    },
+    "scale": 0.025,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.12, "dz": 0.08 },
+        "lower": { "dy": 0.12, "dz": 0.08 },
+        "corner": { "dxSign": "pinch", "dx": 0.08 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "upper": { "dy": 0.06 },
+        "lower": { "dy": -0.12 }
+      },
+      "viseme_D": {
+        "upper": { "dy": 0.048 },
+        "lower": { "dy": -0.12 },
+        "corner": { "dxSign": "wide", "dx": 0.032 }
+      },
+      "viseme_E": {
+        "upper": { "dy": 0.06 },
+        "lower": { "dy": -0.15, "dz": 0.018 },
+        "corner": { "dxSign": "pinch", "dx": 0.06 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.15, "dy": -0.03 },
+        "lower": { "dz": 0.15, "dy": 0.03 },
+        "corner": { "dxSign": "pinch", "dx": 0.25, "dz": 0.08 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.02 },
+        "lower": { "dy": 0.12, "dz": -0.08 }
+      },
+      "viseme_H": {
+        "upper": { "dy": 0.04 },
+        "lower": { "dy": -0.1 }
+      }
+    }
+  },
+  "leah_imeinu": {
+    "model": "/models/leah.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.95,
+      "scanLow": 0.85,
+      "xFaceRange": 0.03,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.02,
+      "mouthXNudge": 0.0,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.032,
+      "radiusY": 0.008,
+      "radiusZ": 0.015,
+      "outerMul": 1.5
+    },
+    "scale": 0.025,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.06, "dz": 0.04 },
+        "lower": { "dy": 0.06, "dz": 0.04 },
+        "corner": { "dxSign": "pinch", "dx": 0.04 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.032 },
+        "lower": { "dy": 0.032 },
+        "corner": { "dxSign": "wide", "dx": 0.16 }
+      },
+      "viseme_C": {
+        "upper": { "dy": 0.02 },
+        "lower": { "dy": -0.04 }
+      },
+      "viseme_D": {
+        "upper": { "dy": 0.018 },
+        "lower": { "dy": -0.045 },
+        "corner": { "dxSign": "wide", "dx": 0.012 }
+      },
+      "viseme_E": {
+        "upper": { "dy": 0.03 },
+        "lower": { "dy": -0.075, "dz": 0.009 },
+        "corner": { "dxSign": "pinch", "dx": 0.03 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.072, "dy": -0.014 },
+        "lower": { "dz": 0.072, "dy": 0.014 },
+        "corner": { "dxSign": "pinch", "dx": 0.12, "dz": 0.038 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.02 },
+        "lower": { "dy": 0.12, "dz": -0.08 }
+      },
+      "viseme_H": {
+        "upper": { "dy": 0.016 },
+        "lower": { "dy": -0.04 }
+      }
+    }
+  },
+  "miriam": {
+    "model": "/models/Meshy_AI_miriam_0212024829_texture.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.95,
+      "scanLow": 0.85,
+      "xFaceRange": 0.03,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.015,
+      "mouthXNudge": 0.01,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.032,
+      "radiusY": 0.008,
+      "radiusZ": 0.015,
+      "outerMul": 1.5
+    },
+    "scale": 0.03,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.078, "dz": 0.052 },
+        "lower": { "dy": 0.078, "dz": 0.052 },
+        "corner": { "dxSign": "pinch", "dx": 0.052 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "upper": { "dy": 0.035 },
+        "lower": { "dy": -0.07 }
+      },
+      "viseme_D": {
+        "upper": { "dy": 0.042 },
+        "lower": { "dy": -0.105 },
+        "corner": { "dxSign": "wide", "dx": 0.028 }
+      },
+      "viseme_E": {
+        "upper": { "dy": 0.035 },
+        "lower": { "dy": -0.088, "dz": 0.011 },
+        "corner": { "dxSign": "pinch", "dx": 0.035 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.15, "dy": -0.03 },
+        "lower": { "dz": 0.15, "dy": 0.03 },
+        "corner": { "dxSign": "pinch", "dx": 0.25, "dz": 0.08 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.02 },
+        "lower": { "dy": 0.12, "dz": -0.08 }
+      },
+      "viseme_H": {
+        "upper": { "dy": 0.044 },
+        "lower": { "dy": -0.11 }
+      }
+    }
+  },
+  "rivkah_imeinu": {
+    "model": "/models/Meshy_AI_rikvah_0209042630_texture.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.95,
+      "scanLow": 0.85,
+      "xFaceRange": 0.03,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.015,
+      "mouthXNudge": 0.025,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.032,
+      "radiusY": 0.008,
+      "radiusZ": 0.015,
+      "outerMul": 1.5
+    },
+    "scale": 0.02,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.12, "dz": 0.08 },
+        "lower": { "dy": 0.12, "dz": 0.08 },
+        "corner": { "dxSign": "pinch", "dx": 0.08 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "upper": { "dy": 0.06 },
+        "lower": { "dy": -0.12 }
+      },
+      "viseme_D": {
+        "upper": { "dy": 0.06 },
+        "lower": { "dy": -0.15 },
+        "corner": { "dxSign": "wide", "dx": 0.04 }
+      },
+      "viseme_E": {
+        "upper": { "dy": 0.045 },
+        "lower": { "dy": -0.11, "dz": 0.014 },
+        "corner": { "dxSign": "pinch", "dx": 0.045 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.045, "dy": -0.009 },
+        "lower": { "dz": 0.045, "dy": 0.009 },
+        "corner": { "dxSign": "pinch", "dx": 0.075, "dz": 0.024 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.004 },
+        "lower": { "dy": 0.024, "dz": -0.016 }
+      },
+      "viseme_H": {
+        "upper": { "dy": 0.04 },
+        "lower": { "dy": -0.1 }
+      }
+    }
+  },
+  "rachel_imeinu": {
+    "model": "/models/Meshy_AI_Rachel_0209042616_texture.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.91,
+      "scanLow": 0.83,
+      "xFaceRange": 0.03,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.02,
+      "mouthXNudge": 0.09,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.02,
+      "radiusY": 0.008,
+      "radiusZ": 0.015,
+      "outerMul": 1.2
+    },
+    "scale": 0.025,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.065, "dz": 0.044 },
+        "lower": { "dy": 0.065, "dz": 0.044 },
+        "corner": { "dxSign": "pinch", "dx": 0.044 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "upper": { "dy": 0.06 },
+        "lower": { "dy": -0.12 }
+      },
+      "viseme_D": {
+        "upper": { "dy": 0.015 },
+        "lower": { "dy": -0.035 },
+        "corner": { "dxSign": "wide", "dx": 0.008 }
+      },
+      "viseme_E": {
+        "upper": { "dy": 0.035 },
+        "lower": { "dy": -0.09, "dz": 0.012 },
+        "corner": { "dxSign": "pinch", "dx": 0.03 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.09, "dy": -0.02 },
+        "lower": { "dz": 0.09, "dy": 0.02 },
+        "corner": { "dxSign": "pinch", "dx": 0.15, "dz": 0.05 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.01 },
+        "lower": { "dy": 0.08, "dz": -0.05 }
+      },
+      "viseme_H": {
+        "upper": { "dy": 0.04 },
+        "lower": { "dy": -0.1 }
+      }
+    }
+  },
+  "sarah_imeinu": {
+    "model": "/models/Meshy_AI_Sarah_0209042622_texture.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.94,
+      "scanLow": 0.86,
+      "xFaceRange": 0.03,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.02,
+      "mouthXNudge": 0.003,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.032,
+      "radiusY": 0.007,
+      "radiusZ": 0.015,
+      "outerMul": 1.5
+    },
+    "scale": 0.025,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.12, "dz": 0.08 },
+        "lower": { "dy": 0.12, "dz": 0.08 },
+        "corner": { "dxSign": "pinch", "dx": 0.08 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "upper": { "dy": 0.055 },
+        "lower": { "dy": -0.12 }
+      },
+      "viseme_D": {
+        "upper": { "dy": 0.02 },
+        "lower": { "dy": -0.04 },
+        "corner": { "dxSign": "wide", "dx": 0.01 }
+      },
+      "viseme_E": {
+        "upper": { "dy": 0.03 },
+        "lower": { "dy": -0.07, "dz": 0.01 },
+        "corner": { "dxSign": "pinch", "dx": 0.025 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.09, "dy": -0.02 },
+        "lower": { "dz": 0.09, "dy": 0.02 },
+        "corner": { "dxSign": "pinch", "dx": 0.15, "dz": 0.05 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.01 },
+        "lower": { "dy": 0.08, "dz": -0.05 }
+      },
+      "viseme_H": {
+        "upper": { "dy": 0.06 },
+        "lower": { "dy": -0.16 }
+      }
+    }
+  },
+  "alter_rebbe": {
+    "model": "/models/alter_rebbe.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.94,
+      "scanLow": 0.86,
+      "xFaceRange": 0.03,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.02,
+      "mouthXNudge": -0.005,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.032,
+      "radiusY": 0.007,
+      "radiusZ": 0.015,
+      "outerMul": 1.5
+    },
+    "scale": 0.025,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.12, "dz": 0.08 },
+        "lower": { "dy": 0.12, "dz": 0.08 },
+        "corner": { "dxSign": "pinch", "dx": 0.08 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "upper": { "dy": 0.08 },
+        "lower": { "dy": -0.16 }
+      },
+      "viseme_D": {
+        "upper": { "dy": 0.05 },
+        "lower": { "dy": -0.1 },
+        "corner": { "dxSign": "wide", "dx": 0.03 }
+      },
+      "viseme_E": {
+        "upper": { "dy": 0.06 },
+        "lower": { "dy": -0.13, "dz": 0.02 },
+        "corner": { "dxSign": "pinch", "dx": 0.06 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.11, "dy": -0.02 },
+        "lower": { "dz": 0.11, "dy": 0.02 },
+        "corner": { "dxSign": "pinch", "dx": 0.18, "dz": 0.06 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.01 },
+        "lower": { "dy": 0.08, "dz": -0.05 }
+      },
+      "viseme_H": {
+        "upper": { "dy": 0.06 },
+        "lower": { "dy": -0.12 }
+      }
+    }
+  },
+  "king_david": {
+    "model": "/models/Meshy_AI_Bard_in_Ancient_Fortr_0131193517_texture.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.94,
+      "scanLow": 0.86,
+      "xFaceRange": 0.03,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.02,
+      "mouthXNudge": 0.005,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.032,
+      "radiusY": 0.007,
+      "radiusZ": 0.015,
+      "outerMul": 1.5
+    },
+    "scale": 0.025,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.12, "dz": 0.08 },
+        "lower": { "dy": 0.12, "dz": 0.08 },
+        "corner": { "dxSign": "pinch", "dx": 0.08 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "upper": { "dy": 0.05 },
+        "lower": { "dy": -0.1 }
+      },
+      "viseme_D": {
+        "upper": { "dy": 0.06 },
+        "lower": { "dy": -0.12 },
+        "corner": { "dxSign": "wide", "dx": 0.04 }
+      },
+      "viseme_E": {
+        "upper": { "dy": 0.04 },
+        "lower": { "dy": -0.08, "dz": 0.02 },
+        "corner": { "dxSign": "pinch", "dx": 0.05 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.11, "dy": -0.02 },
+        "lower": { "dz": 0.11, "dy": 0.02 },
+        "corner": { "dxSign": "pinch", "dx": 0.18, "dz": 0.06 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.01 },
+        "lower": { "dy": 0.08, "dz": -0.05 }
+      },
+      "viseme_H": {
+        "upper": { "dy": 0.05 },
+        "lower": { "dy": -0.1 }
+      }
+    }
+  },
+  "maimonides": {
+    "model": "/models/maimonides_rigify_production.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.90,
+      "scanLow": 0.84,
+      "xFaceRange": 0.03,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.012,
+      "mouthXNudge": 0.005,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.032,
+      "radiusY": 0.008,
+      "radiusZ": 0.015,
+      "outerMul": 1.5
+    },
+    "scale": 0.02,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.12, "dz": 0.08 },
+        "lower": { "dy": 0.12, "dz": 0.08 },
+        "corner": { "dxSign": "pinch", "dx": 0.08 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "upper": { "dy": 0.08 },
+        "lower": { "dy": -0.16 }
+      },
+      "viseme_D": {
+        "upper": { "dy": 0.07 },
+        "lower": { "dy": -0.17 },
+        "corner": { "dxSign": "wide", "dx": 0.05 }
+      },
+      "viseme_E": {
+        "upper": { "dy": 0.1 },
+        "lower": { "dy": -0.25, "dz": 0.03 },
+        "corner": { "dxSign": "pinch", "dx": 0.1 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.18, "dy": -0.03 },
+        "lower": { "dz": 0.18, "dy": 0.03 },
+        "corner": { "dxSign": "pinch", "dx": 0.3, "dz": 0.1 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.01 },
+        "lower": { "dy": 0.08, "dz": -0.05 }
+      },
+      "viseme_H": {
+        "upper": { "dy": 0.06 },
+        "lower": { "dy": -0.15 }
+      }
+    }
+  },
+  "ramchal": {
+    "model": "/models/Meshy_AI_Ramchal_0209035108_texture.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.98,
+      "scanLow": 0.88,
+      "xFaceRange": 0.03,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.02,
+      "mouthXNudge": 0.005,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.032,
+      "radiusY": 0.008,
+      "radiusZ": 0.015,
+      "outerMul": 1.5
+    },
+    "scale": 0.015,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.12, "dz": 0.08 },
+        "lower": { "dy": 0.12, "dz": 0.08 },
+        "corner": { "dxSign": "pinch", "dx": 0.08 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "upper": { "dy": 0.08 },
+        "lower": { "dy": -0.16 }
+      },
+      "viseme_D": {
+        "upper": { "dy": 0.07 },
+        "lower": { "dy": -0.17 },
+        "corner": { "dxSign": "wide", "dx": 0.05 }
+      },
+      "viseme_E": {
+        "upper": { "dy": 0.1 },
+        "lower": { "dy": -0.25, "dz": 0.03 },
+        "corner": { "dxSign": "pinch", "dx": 0.1 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.18, "dy": -0.03 },
+        "lower": { "dz": 0.18, "dy": 0.03 },
+        "corner": { "dxSign": "pinch", "dx": 0.3, "dz": 0.1 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.01 },
+        "lower": { "dy": 0.08, "dz": -0.05 }
+      },
+      "viseme_H": {
+        "upper": { "dy": 0.06 },
+        "lower": { "dy": -0.15 }
+      }
+    }
+  },
+  "ramban": {
+    "model": "/models/Meshy_AI_Ramban_0209035048_texture.glb",
+    "detection": {
+      "method": "nose_tip",
+      "scanHigh": 0.98,
+      "scanLow": 0.88,
+      "xFaceRange": 0.03,
+      "noseTipXRange": 0.03,
+      "mouthYOffset": -0.02,
+      "mouthXNudge": 0,
+      "ySearch": 0.03,
+      "frontZDepth": 0.03,
+      "mouthZOffset": -0.005
+    },
+    "radius": {
+      "radiusX": 0.032,
+      "radiusY": 0.008,
+      "radiusZ": 0.015,
+      "outerMul": 1.5
+    },
+    "scale": 0.03,
+    "polygonOffset": 1,
+    "visemes": {
+      "viseme_A": {
+        "upper": { "dy": -0.15, "dz": 0.1 },
+        "lower": { "dy": 0.15, "dz": 0.1 },
+        "corner": { "dxSign": "pinch", "dx": 0.1 }
+      },
+      "viseme_B": {
+        "upper": { "dy": -0.08 },
+        "lower": { "dy": 0.08 },
+        "corner": { "dxSign": "wide", "dx": 0.4 }
+      },
+      "viseme_C": {
+        "upper": { "dy": 0.15 },
+        "lower": { "dy": -0.3 }
+      },
+      "viseme_D": {
+        "upper": { "dy": 0.2 },
+        "lower": { "dy": -0.45 },
+        "corner": { "dxSign": "wide", "dx": 0.1 }
+      },
+      "viseme_E": {
+        "upper": { "dy": 0.15 },
+        "lower": { "dy": -0.4, "dz": 0.05 },
+        "corner": { "dxSign": "pinch", "dx": 0.12 }
+      },
+      "viseme_F": {
+        "upper": { "dz": 0.25, "dy": -0.05 },
+        "lower": { "dz": 0.25, "dy": 0.05 },
+        "corner": { "dxSign": "pinch", "dx": 0.4, "dz": 0.15 }
+      },
+      "viseme_G": {
+        "upper": { "dy": 0.03 },
+        "lower": { "dy": 0.2, "dz": -0.15 }
+      },
+      "viseme_H": {
+        "upper": { "dy": 0.1 },
+        "lower": { "dy": -0.25 }
+      }
+    }
+  }
+}
