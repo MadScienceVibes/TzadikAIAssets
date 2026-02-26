@@ -1,0 +1,40 @@
+DRAFT — Chabad.org Permissions Request
+Submit via: https://www.chabad.org/library/article_cdo/aid/132801/jewish/Permissions.htm
+===============================================================================
+
+Subject: Permission Request — Audio Prayer Recordings for BeitOhr.ai Educational Project
+
+Dear Chabad.org Permissions Team,
+
+I am developing BeitOhr.ai, an educational technology project designed to help Jews learn and follow along with daily prayers and Birkat Hamazon (Grace After Meals) using an interactive 3D character guide.
+
+The application provides a sing-along experience where users can follow the text of prayers at their own pace, with audio guidance to help them learn proper pronunciation and nusach (liturgical melody).
+
+I am writing to request permission to use audio recordings from your Tefillah Audio collection for this educational purpose. Specifically, I am interested in:
+
+DAVENING (Prayer Services):
+- Shema Yisrael and its blessings
+- Amidah / Shemoneh Esrei (weekday and Shabbat)
+- Kaddish (Nusach Ari / Chabad version)
+- Barchu
+- Aleinu
+- Ashrei
+
+BIRKAT HAMAZON (Grace After Meals):
+- Full Birkat Hamazon recording
+- Individual brachot if available (Hazan, Boneh Yerushalayim, HaTov v'HaMeitiv)
+- Shir HaMaalot (Psalm 126)
+- Zimun
+
+Nusach Ari (Chabad) recordings are strongly preferred, as this is the tradition we aim to teach.
+
+The audio would be used within the application to guide users through the prayer text, with user-controlled playback speed to accommodate different levels of familiarity. The recordings would be attributed to Chabad.org and the original performers.
+
+I would be happy to discuss licensing terms, attribution requirements, or any other conditions you may have.
+
+Thank you for your time and for the incredible work Chabad.org does making Jewish resources accessible worldwide.
+
+B'vracha,
+[Gabriel Greenstein]
+[Contact info]
+[BeitOhr.ai project URL if available]
