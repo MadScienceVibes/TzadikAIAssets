@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RC Controller Preview</title>
+<style>
+  body { margin: 0; background: #1a1a2e; overflow: hidden; font-family: sans-serif; }
+  canvas { display: block; }
+  #controls {
+    position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+    background: rgba(0,0,0,0.8); border-radius: 12px; padding: 16px 24px;
+    color: #ccc; font-size: 13px; text-align: center;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  #controls .key {
+    display: inline-block; background: rgba(255,255,255,0.15);
+    border-radius: 4px; padding: 2px 8px; margin: 0 2px;
+    font-weight: bold; color: #fff; min-width: 20px; text-align: center;
+  }
+  #controls .key.active { background: #4ade80; color: #000; }
+  #controls .row { margin: 4px 0; }
+  #status {
+    position: absolute; top: 20px; left: 50%; transform: translateX(-50%);
+    background: rgba(0,0,0,0.8); border-radius: 8px; padding: 8px 16px;
+    color: #60a5fa; font-size: 14px; font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<div id="status">Loading controller...</div>
+
+<div id="controls">
+  <div class="row">
+    Joystick: <span class="key" id="k-up">W/↑</span> <span class="key" id="k-down">S/↓</span>
+    <span class="key" id="k-left">A/←</span> <span class="key" id="k-right">D/→</span>
+  </div>
+  <div class="row" style="margin-top:8px">
+    <span class="key" id="k-jump">SPACE</span> Jump &nbsp;&nbsp;
+    <span class="key" id="k-boost">B</span> Boost
+  </div>
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x1a1a2e);
+
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.01, 100);
+camera.position.set(0, 1.5, 2.0);
+camera.lookAt(0, 0.15, 0);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.2;
+document.body.appendChild(renderer.domElement);
+
+// Lights
+const ambient = new THREE.AmbientLight(0xffffff, 0.6);
+scene.add(ambient);
+const dirLight = new THREE.DirectionalLight(0xffffff, 1.2);
+dirLight.position.set(3, 5, 4);
+scene.add(dirLight);
+const fillLight = new THREE.DirectionalLight(0x8888ff, 0.4);
+fillLight.position.set(-2, 3, -1);
+scene.add(fillLight);
+
+// Controls
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 0.15, 0);
+controls.enableDamping = true;
+controls.dampingFactor = 0.08;
+controls.update();
+
+// Input state
+const keys = {};
+const keyMap = {
+  'arrowup': 'up', 'w': 'up',
+  'arrowdown': 'down', 's': 'down',
+  'arrowleft': 'left', 'a': 'left',
+  'arrowright': 'right', 'd': 'right',
+  ' ': 'jump',
+  'b': 'boost',
+};
+
+// UI key indicators
+const keyElements = {
+  up: document.getElementById('k-up'),
+  down: document.getElementById('k-down'),
+  left: document.getElementById('k-left'),
+  right: document.getElementById('k-right'),
+  jump: document.getElementById('k-jump'),
+  boost: document.getElementById('k-boost'),
+};
+
+window.addEventListener('keydown', (e) => {
+  const action = keyMap[e.key.toLowerCase()];
+  if (action) {
+    e.preventDefault();
+    keys[action] = true;
+    if (keyElements[action]) keyElements[action].classList.add('active');
+  }
+});
+window.addEventListener('keyup', (e) => {
+  const action = keyMap[e.key.toLowerCase()];
+  if (action) {
+    keys[action] = false;
+    if (keyElements[action]) keyElements[action].classList.remove('active');
+  }
+});
+
+// Animation targets
+let joystick = null;
+let btnJump = null;
+let btnBoost = null;
+
+// Rest positions (saved after load)
+let joystickRestRot = new THREE.Euler();
+let btnJumpRestY = 0;
+let btnBoostRestY = 0;
+
+const TILT_ANGLE = 0.35; // radians for joystick tilt
+const PRESS_DEPTH = 0.03; // how far buttons depress (Y axis in Three.js = Z in Blender)
+const LERP_SPEED = 12; // animation smoothness
+
+// Current animated values
+const anim = {
+  joystickX: 0, // forward/back tilt
+  joystickY: 0, // left/right tilt
+  jumpPress: 0, // 0-1
+  boostPress: 0, // 0-1
+};
+
+// Load model
+const loader = new GLTFLoader();
+loader.load('rc_controller.glb', (gltf) => {
+  const model = gltf.scene;
+  scene.add(model);
+
+  // Find parts by name
+  model.traverse((child) => {
+    if (child.name === 'joystick') {
+      joystick = child;
+      joystickRestRot.copy(child.rotation);
+    }
+    if (child.name === 'btn_jump') {
+      btnJump = child;
+      btnJumpRestY = child.position.y;
+    }
+    if (child.name === 'btn_boost') {
+      btnBoost = child;
+      btnBoostRestY = child.position.y;
+    }
+  });
+
+  const status = document.getElementById('status');
+  const parts = [joystick && 'joystick', btnJump && 'btn_jump', btnBoost && 'btn_boost'].filter(Boolean);
+  status.textContent = `Loaded — found: ${parts.join(', ')}`;
+  status.style.color = '#4ade80';
+
+  console.log('Model loaded. Parts found:', parts);
+  if (joystick) console.log('Joystick rest rotation:', joystickRestRot);
+  if (btnJump) console.log('btn_jump rest Y:', btnJumpRestY);
+  if (btnBoost) console.log('btn_boost rest Y:', btnBoostRestY);
+
+}, undefined, (err) => {
+  document.getElementById('status').textContent = 'Error loading model: ' + err.message;
+  document.getElementById('status').style.color = '#f87171';
+});
+
+// Animation loop
+const clock = new THREE.Clock();
+
+function animate() {
+  requestAnimationFrame(animate);
+  const dt = clock.getDelta();
+  const lerpFactor = 1 - Math.exp(-LERP_SPEED * dt);
+
+  // Target values from input
+  const targetJoystickX = (keys.up ? -TILT_ANGLE : 0) + (keys.down ? TILT_ANGLE : 0);
+  const targetJoystickY = (keys.left ? TILT_ANGLE : 0) + (keys.right ? -TILT_ANGLE : 0);
+  const targetJump = keys.jump ? 1 : 0;
+  const targetBoost = keys.boost ? 1 : 0;
+
+  // Lerp
+  anim.joystickX += (targetJoystickX - anim.joystickX) * lerpFactor;
+  anim.joystickY += (targetJoystickY - anim.joystickY) * lerpFactor;
+  anim.jumpPress += (targetJump - anim.jumpPress) * lerpFactor;
+  anim.boostPress += (targetBoost - anim.boostPress) * lerpFactor;
+
+  // Apply to objects
+  // Blender Z-up → Three.js Y-up: Blender X→X, Y→-Z, Z→Y
+  if (joystick) {
+    joystick.rotation.x = joystickRestRot.x + anim.joystickX;  // forward/back tilt
+    joystick.rotation.z = joystickRestRot.z + anim.joystickY;  // left/right tilt
+  }
+
+  if (btnJump) {
+    btnJump.position.y = btnJumpRestY - anim.jumpPress * PRESS_DEPTH;  // depress into controller
+  }
+
+  if (btnBoost) {
+    btnBoost.position.y = btnBoostRestY - anim.boostPress * PRESS_DEPTH;
+  }
+
+  controls.update();
+  renderer.render(scene, camera);
+}
+animate();
+
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+</script>
+</body>
+</html>
