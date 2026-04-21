@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>grand_library calibration — listening test</title>
+<style>
+  :root {
+    --bg: #0e0e12;
+    --panel: #17171d;
+    --ink: #e6e6ea;
+    --muted: #8a8a95;
+    --accent: #c9a14a;
+    --accent-dim: #7a6330;
+    --line: #23232c;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header { padding: 24px 32px 12px; border-bottom: 1px solid var(--line); }
+  h1 { font-weight: 500; font-size: 20px; margin: 0 0 6px; letter-spacing: 0.01em; }
+  .subtitle { color: var(--muted); font-size: 13px; max-width: 70ch; line-height: 1.5; }
+  .subtitle code { background: var(--panel); padding: 1px 6px; border-radius: 3px; font-size: 12px; }
+  main { padding: 18px 32px 32px; max-width: 1080px; }
+  .candidates { display: grid; gap: 14px; margin-top: 8px; }
+  .candidate {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 6px; padding: 16px 18px; transition: border-color 120ms ease;
+  }
+  .candidate.playing { border-color: var(--accent-dim); }
+  .candidate h2 { font-size: 14px; font-weight: 500; margin: 0 0 4px; color: var(--ink); }
+  .candidate .meta { color: var(--muted); font-size: 12px; margin-bottom: 12px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .candidate .meta .tag {
+    padding: 1px 7px; background: var(--bg); border: 1px solid var(--line);
+    border-radius: 3px; font-family: ui-monospace, SFMono-Regular, monospace; font-size: 11px;
+  }
+  .candidate .meta .tag .k { color: var(--muted); }
+  audio { width: 100%; display: block; }
+  .controls { display: flex; gap: 12px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+  .controls label { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; }
+  .controls input[type="checkbox"] { accent-color: var(--accent); }
+  .controls .spacer { flex: 1; }
+  .controls a { font-size: 12px; color: var(--muted); text-decoration: none; }
+  button.seam {
+    background: var(--bg); color: var(--ink); border: 1px solid var(--line);
+    padding: 4px 12px; border-radius: 3px; font-size: 12px; cursor: pointer;
+    transition: border-color 120ms ease;
+  }
+  button.seam:hover { border-color: var(--accent-dim); }
+  .notes {
+    margin-top: 32px; padding: 18px 20px; background: var(--panel);
+    border-left: 2px solid var(--accent-dim); font-size: 13px; color: var(--muted); line-height: 1.55;
+  }
+  .notes h3 { color: var(--ink); font-size: 13px; margin: 0 0 10px; font-weight: 500; }
+  .notes h3:not(:first-child) { margin-top: 14px; }
+  .notes ul { margin: 6px 0 0 18px; padding: 0; }
+  .notes li { margin: 4px 0; }
+  .notes kbd {
+    background: var(--bg); border: 1px solid var(--line); border-radius: 3px;
+    padding: 1px 6px; font-family: ui-monospace, SFMono-Regular, monospace; font-size: 11px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>grand_library · loop calibration · 4 takes</h1>
+    <p class="subtitle">
+      Each file is an independent 30s ElevenLabs generation of the
+      <code>grand_library</code> prompt with <code>loop: true</code>, returned in a different format.
+      Different content, different seams — pick the winner on authorial fit + seam cleanness + codec transparency.
+    </p>
+  </header>
+
+  <main>
+    <div class="candidates" id="candidates"></div>
+
+    <div class="notes">
+      <h3>Listening checklist per take</h3>
+      <ul>
+        <li><b>Authorial fit:</b> does it sound like a beit midrash? Hebrew/Aramaic murmur, page turns, wooden benches, stone reverb? Any wrong cues (music, shouting, modernness)?</li>
+        <li><b>Seam:</b> click <kbd>Jump to seam (-2s)</kbd> to hear the last 2 seconds flowing into the first (with loop on). A click or drop there = bad seam.</li>
+        <li><b>Codec transparency:</b> MP3 128 vs 192 vs Opus 128 vs PCM lossless — can you hear compression artifacts? PCM is the reference.</li>
+      </ul>
+      <h3>Note on Safari + Opus</h3>
+      <p>Opus in <code>&lt;audio&gt;</code> may not play in Safari (version-dependent). If the Opus row is silent, try Chrome or Firefox. The frontend's final playback uses Web Audio <code>decodeAudioData</code>, which has broader Opus support than plain <code>&lt;audio&gt;</code>.</p>
+    </div>
+  </main>
+
+<script>
+const CANDIDATES = [
+  {
+    id: "mp3-128",
+    title: "MP3 · 44.1kHz · 128kbps",
+    meta: [
+      ["format", "mp3_44100_128"],
+      ["size", "481 KB"],
+      ["credits", "600"],
+      ["safari-safe", "yes"],
+    ],
+    src: "probe_mp3_44100_128_loop-true.mp3",
+  },
+  {
+    id: "mp3-192",
+    title: "MP3 · 44.1kHz · 192kbps",
+    meta: [
+      ["format", "mp3_44100_192"],
+      ["size", "722 KB"],
+      ["credits", "600"],
+      ["safari-safe", "yes"],
+    ],
+    src: "probe_mp3_44100_192_loop-true.mp3",
+  },
+  {
+    id: "opus-128",
+    title: "Opus · 48kHz · 128kbps",
+    meta: [
+      ["format", "opus_48000_128"],
+      ["size", "425 KB"],
+      ["credits", "600"],
+      ["safari-safe", "iffy in <audio>"],
+    ],
+    src: "probe_opus_48000_128_loop-true.opus",
+  },
+  {
+    id: "pcm-48k",
+    title: "PCM · 48kHz · lossless (wrapped as WAV for browser)",
+    meta: [
+      ["format", "pcm_48000"],
+      ["size", "5.76 MB"],
+      ["credits", "600"],
+      ["safari-safe", "yes (WAV)"],
+    ],
+    src: "probe_pcm_48000_loop-true.wav",
+  },
+];
+
+function el(tag, attrs, children) {
+  const node = document.createElement(tag);
+  if (attrs) {
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === "class") node.className = v;
+      else if (k === "text") node.textContent = v;
+      else node.setAttribute(k, v);
+    }
+  }
+  if (children) {
+    for (const child of children) {
+      if (child != null) node.appendChild(child);
+    }
+  }
+  return node;
+}
+
+function buildCandidate(c) {
+  const metaTags = c.meta.map(([k, v]) => {
+    const k_ = el("span", { class: "k", text: k + ":" });
+    const tag = el("span", { class: "tag" }, [k_, document.createTextNode(" " + v)]);
+    return tag;
+  });
+
+  const audio = el("audio", { id: "a-" + c.id, src: c.src, controls: "", preload: "auto", loop: "" });
+
+  const loopCheckbox = el("input", { type: "checkbox", id: "loop-" + c.id, checked: "" });
+  const loopLabel = el("label", {}, [loopCheckbox, document.createTextNode(" loop")]);
+
+  const seamBtn = el("button", { class: "seam", "data-target": c.id, text: "Jump to seam (-2s)" });
+
+  const spacer = el("span", { class: "spacer" });
+  const dl = el("a", { href: c.src, download: "", text: "download ↓" });
+
+  const controls = el("div", { class: "controls" }, [loopLabel, seamBtn, spacer, dl]);
+
+  return el("div", { class: "candidate" }, [
+    el("h2", { text: c.title }),
+    el("div", { class: "meta" }, metaTags),
+    audio,
+    controls,
+  ]);
+}
+
+const container = document.getElementById("candidates");
+CANDIDATES.forEach(c => container.appendChild(buildCandidate(c)));
+
+// Wire: only one audio plays at a time
+const audios = Array.from(document.querySelectorAll("audio"));
+audios.forEach(a => {
+  a.addEventListener("play", () => {
+    audios.forEach(other => {
+      if (other !== a) other.pause();
+      other.parentElement.classList.remove("playing");
+    });
+    a.parentElement.classList.add("playing");
+  });
+  a.addEventListener("pause", () => {
+    a.parentElement.classList.remove("playing");
+  });
+});
+
+// Loop toggles
+CANDIDATES.forEach(c => {
+  const a = document.getElementById("a-" + c.id);
+  const cb = document.getElementById("loop-" + c.id);
+  cb.addEventListener("change", () => { a.loop = cb.checked; });
+});
+
+// Jump-to-seam buttons: seek to duration - 2s, play (loop on = hear the wrap)
+document.querySelectorAll("button.seam").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const id = btn.dataset.target;
+    const a = document.getElementById("a-" + id);
+    if (Number.isFinite(a.duration) && a.duration > 2) {
+      a.currentTime = Math.max(0, a.duration - 2);
+      a.play();
+    }
+  });
+});
+</script>
+</body>
+</html>

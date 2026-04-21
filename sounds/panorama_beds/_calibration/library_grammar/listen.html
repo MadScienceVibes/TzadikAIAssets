@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Library archetype grammar · 3 takes</title>
+<style>
+  :root {
+    --bg: #0e0e12;
+    --panel: #17171d;
+    --ink: #e6e6ea;
+    --muted: #8a8a95;
+    --accent: #c9a14a;
+    --accent-dim: #7a6330;
+    --line: #23232c;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    margin: 0; padding: 0;
+  }
+  header { padding: 24px 32px 12px; border-bottom: 1px solid var(--line); }
+  h1 { font-weight: 500; font-size: 20px; margin: 0 0 6px; letter-spacing: 0.01em; }
+  .subtitle { color: var(--muted); font-size: 13px; max-width: 70ch; line-height: 1.5; }
+  .subtitle code { background: var(--panel); padding: 1px 6px; border-radius: 3px; font-size: 12px; }
+  .prompt { margin-top: 12px; padding: 10px 14px; background: var(--panel); border-left: 2px solid var(--accent-dim); font-size: 13px; color: var(--ink); line-height: 1.5; font-style: italic; }
+  main { padding: 18px 32px 32px; max-width: 1080px; }
+  .takes { display: grid; gap: 14px; margin-top: 8px; }
+  .take {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 6px; padding: 16px 18px; transition: border-color 120ms ease;
+  }
+  .take.playing { border-color: var(--accent-dim); }
+  .take h2 { font-size: 14px; font-weight: 500; margin: 0 0 4px; color: var(--ink); }
+  .take .meta { color: var(--muted); font-size: 12px; margin-bottom: 12px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .take .meta .tag {
+    padding: 1px 7px; background: var(--bg); border: 1px solid var(--line);
+    border-radius: 3px; font-family: ui-monospace, SFMono-Regular, monospace; font-size: 11px;
+  }
+  .take .meta .tag .k { color: var(--muted); }
+  audio { width: 100%; display: block; }
+  .controls { display: flex; gap: 12px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+  .controls label { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; }
+  .controls input[type="checkbox"] { accent-color: var(--accent); }
+  .controls .spacer { flex: 1; }
+  .controls a { font-size: 12px; color: var(--muted); text-decoration: none; }
+  .checklist {
+    margin-top: 32px; padding: 18px 20px; background: var(--panel);
+    border-left: 2px solid var(--accent-dim); font-size: 13px; color: var(--muted); line-height: 1.55;
+  }
+  .checklist h3 { color: var(--ink); font-size: 13px; margin: 0 0 10px; font-weight: 500; }
+  .checklist ul { margin: 6px 0 0 18px; padding: 0; }
+  .checklist li { margin: 4px 0; }
+  .checklist li b { color: var(--ink); }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Library archetype grammar · 3 takes of the same v2 prompt</h1>
+    <p class="subtitle">
+      Testing whether the canonical acoustic-forward grammar for <code>library/study</code>
+      produces authentic library/study hall audio instead of cafe/restaurant.
+      Non-deterministic — each take is a different random seed of the same prompt.
+      12 seconds each (short = cheap ideation pass), <code>prompt_influence: 0.3</code>.
+    </p>
+    <div class="prompt">
+      Large old stone library in daylight, listener seated between shelves, soft page rustle and cloth movement, very distant hushed study presence, sparse wood chair creaks, restrained natural reverb, calm and civilized, no close speech, no music, seamless ambient loop
+    </div>
+  </header>
+
+  <main>
+    <div class="takes" id="takes"></div>
+
+    <div class="checklist">
+      <h3>What to listen for</h3>
+      <ul>
+        <li><b>Authorial fit:</b> does it sound like a quiet old library? Stone/wood room, paper texture, restrained presence? Not a cafe, not a restaurant, not a kitchen.</li>
+        <li><b>Event density:</b> sparse and irregular — no more than 1-2 audible events in 12 seconds. Too dense = reads as "people in a room" → cafe.</li>
+        <li><b>Reverb character:</b> restrained but present — you should feel the stone room, not hear a dry recording booth.</li>
+        <li><b>Variance across takes:</b> all 3 should read as "library" in different moods. If they're all cafe-ish, the grammar itself is failing. If 1 works and 2 don't, the grammar is close but needs a re-roll budget.</li>
+      </ul>
+      <h3>Outcome gates</h3>
+      <ul>
+        <li><b>Pass:</b> ≥2 of 3 takes sound like a library → grammar locked for all library/study scenes (grand_library, study_benches, italian_study_1–6, ramchal_study, deans_study, brooklyn_beit_midrash, torah_study_hall, and the other library/study members)</li>
+        <li><b>Partial:</b> 1 of 3 works → grammar is viable but high-re-roll. Tune the prompt, maybe drop "stone" or add more exclusions.</li>
+        <li><b>Fail:</b> 0 of 3 sound like a library → grammar is wrong for this archetype, rewrite.</li>
+      </ul>
+    </div>
+  </main>
+
+<script>
+const TAKES = [
+  { id: "take-1", title: "Take 1", src: "take_1.mp3" },
+  { id: "take-2", title: "Take 2", src: "take_2.mp3" },
+  { id: "take-3", title: "Take 3", src: "take_3.mp3" },
+];
+
+function el(tag, attrs, children) {
+  const node = document.createElement(tag);
+  if (attrs) {
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === "class") node.className = v;
+      else if (k === "text") node.textContent = v;
+      else node.setAttribute(k, v);
+    }
+  }
+  if (children) for (const c of children) if (c != null) node.appendChild(c);
+  return node;
+}
+
+function buildTake(t, index) {
+  const metaTags = [
+    ["format", "mp3_44100_192"],
+    ["duration", "12s"],
+    ["credits", "240"],
+    ["prompt_infl", "0.3"],
+  ].map(([k, v]) => {
+    const key = el("span", { class: "k", text: k + ":" });
+    return el("span", { class: "tag" }, [key, document.createTextNode(" " + v)]);
+  });
+
+  const audio = el("audio", { id: "a-" + t.id, src: t.src, controls: "", preload: "auto", loop: "" });
+
+  const cb = el("input", { type: "checkbox", id: "loop-" + t.id, checked: "" });
+  const loopLabel = el("label", {}, [cb, document.createTextNode(" loop")]);
+
+  const spacer = el("span", { class: "spacer" });
+  const dl = el("a", { href: t.src, download: "", text: "download ↓" });
+  const controls = el("div", { class: "controls" }, [loopLabel, spacer, dl]);
+
+  return el("div", { class: "take" }, [
+    el("h2", { text: t.title }),
+    el("div", { class: "meta" }, metaTags),
+    audio,
+    controls,
+  ]);
+}
+
+const container = document.getElementById("takes");
+TAKES.forEach((t, i) => container.appendChild(buildTake(t, i)));
+
+const audios = Array.from(document.querySelectorAll("audio"));
+audios.forEach(a => {
+  a.addEventListener("play", () => {
+    audios.forEach(other => {
+      if (other !== a) other.pause();
+      other.parentElement.classList.remove("playing");
+    });
+    a.parentElement.classList.add("playing");
+  });
+  a.addEventListener("pause", () => a.parentElement.classList.remove("playing"));
+});
+
+TAKES.forEach(t => {
+  const a = document.getElementById("a-" + t.id);
+  const cb = document.getElementById("loop-" + t.id);
+  cb.addEventListener("change", () => { a.loop = cb.checked; });
+});
+</script>
+</body>
+</html>

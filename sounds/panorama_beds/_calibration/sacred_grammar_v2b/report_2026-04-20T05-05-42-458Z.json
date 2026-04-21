@@ -1,0 +1,40 @@
+{
+  "archetype": "sacred_grammar_v2b",
+  "prompt_file": "backend/scripts/elevenlabs/prompts/western_wall_v2_b.txt",
+  "prompt_text": "Expansive outdoor stone plaza under open sky in daylight, massive ancient wall rising in front of the listener a few meters away, wide open-air acoustic with long diffuse reverb off cut stone, very distant barely-audible murmur of prayer blended into ambience, occasional far-off cloth movement, nothing close, no foreground speech, no foreground rustle, no music, no enclosed space, no echo chamber, seamless ambient loop",
+  "prompt_length": 422,
+  "duration_seconds": 12,
+  "prompt_influence": 0.3,
+  "output_format": "pcm_48000",
+  "total_credits_charged": 720,
+  "ran_at": "2026-04-20T05:05:56.490Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1776661547252-1",
+      "http_status": 200,
+      "credits_charged": 240,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 2304000,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/sacred_grammar_v2b/take_1.pcm"
+    },
+    {
+      "take": 2,
+      "request_id": "local-1776661551902-2",
+      "http_status": 200,
+      "credits_charged": 240,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 2304000,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/sacred_grammar_v2b/take_2.pcm"
+    },
+    {
+      "take": 3,
+      "request_id": "local-1776661556489-3",
+      "http_status": 200,
+      "credits_charged": 240,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 2304000,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/sacred_grammar_v2b/take_3.pcm"
+    }
+  ]
+}

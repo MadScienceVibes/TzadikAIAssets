@@ -1,0 +1,22 @@
+{
+  "archetype": "library_codec_test",
+  "prompt_file": "backend/scripts/elevenlabs/prompts/grand_library_v2.txt",
+  "prompt_text": "Large old stone library in daylight, listener seated between shelves, soft page rustle and cloth movement, very distant hushed study presence, sparse wood chair creaks, restrained natural reverb, calm and civilized, no close speech, no music, seamless ambient loop",
+  "prompt_length": 264,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "pcm_48000",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-20T02:37:36.284Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1776652656260-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 4224000,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/library_codec_test/take_1.pcm"
+    }
+  ]
+}

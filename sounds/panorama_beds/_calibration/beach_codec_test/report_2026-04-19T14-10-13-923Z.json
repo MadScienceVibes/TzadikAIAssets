@@ -1,0 +1,31 @@
+{
+  "archetype": "beach_codec_test",
+  "prompt_file": "backend/scripts/elevenlabs/prompts/beach_v2.txt",
+  "prompt_text": "Mediterranean sandy shoreline at midday, listener standing just above the tideline, gentle wave wash and broad open sky, occasional distant gull call, soft sea breeze, no voices, no boats, no music, seamless ambient loop",
+  "prompt_length": 220,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "pcm_48000",
+  "total_credits_charged": 880,
+  "ran_at": "2026-04-19T14:10:25.260Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1776607819753-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 4224000,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/beach_codec_test/take_1.pcm"
+    },
+    {
+      "take": 2,
+      "request_id": "local-1776607825258-2",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 4224000,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/beach_codec_test/take_2.pcm"
+    }
+  ]
+}

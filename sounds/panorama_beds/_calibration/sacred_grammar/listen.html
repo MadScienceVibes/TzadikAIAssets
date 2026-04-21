@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sacred archetype probe — Western Wall v2 grammar</title>
+<style>
+  :root {
+    --bg: #0e0e12;
+    --panel: #17171d;
+    --ink: #e6e6ea;
+    --muted: #8a8a95;
+    --accent: #c9a14a;
+    --accent-dim: #7a6330;
+    --line: #23232c;
+    --lossless: #5a8fb0;
+    --lossy: #b06d3a;
+    --pass: #6fa86f;
+    --partial: #c9a14a;
+    --fail: #b06060;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; padding: 0; }
+  header { padding: 24px 32px 12px; border-bottom: 1px solid var(--line); }
+  h1 { font-weight: 500; font-size: 20px; margin: 0 0 6px; letter-spacing: 0.01em; }
+  .subtitle { color: var(--muted); font-size: 13px; max-width: 74ch; line-height: 1.55; }
+  .subtitle code { background: var(--panel); padding: 1px 6px; border-radius: 3px; font-size: 12px; }
+  .factbox { margin-top: 14px; padding: 12px 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 4px; font-size: 13px; color: var(--ink); line-height: 1.55; max-width: 74ch; }
+  .factbox h3 { margin: 0 0 8px; font-size: 13px; font-weight: 500; color: var(--accent); }
+  .factbox ul { margin: 0 0 0 18px; padding: 0; }
+  .factbox li { margin: 4px 0; }
+  .factbox li b { color: var(--ink); }
+  .factbox .pass { color: var(--pass); font-weight: 500; }
+  .factbox .partial { color: var(--partial); font-weight: 500; }
+  .factbox .fail { color: var(--fail); font-weight: 500; }
+  .prompt { margin-top: 10px; padding: 10px 14px; background: var(--bg); border-left: 2px solid var(--accent-dim); font-size: 12px; color: var(--muted); font-style: italic; line-height: 1.5; max-width: 74ch; }
+  main { padding: 18px 32px 32px; max-width: 1080px; }
+  .take-group { margin-top: 14px; padding: 16px 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+  .take-group h3 { font-size: 14px; font-weight: 500; margin: 0 0 10px; color: var(--ink); }
+  .codecs { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 720px) { .codecs { grid-template-columns: 1fr; } }
+  .codec { padding: 10px 12px; background: var(--bg); border: 1px solid var(--line); border-radius: 4px; }
+  .codec-label { display: flex; align-items: baseline; gap: 10px; margin-bottom: 6px; flex-wrap: wrap; }
+  .codec-label .name { font-size: 13px; font-weight: 500; }
+  .codec-label .type-tag { font-size: 10px; padding: 1px 6px; border-radius: 2px; font-weight: 500; letter-spacing: 0.03em; text-transform: uppercase; }
+  .codec-label .type-tag.lossless { background: rgba(90,143,176,0.18); color: var(--lossless); }
+  .codec-label .type-tag.lossy { background: rgba(176,109,58,0.18); color: var(--lossy); }
+  .codec-label .size { font-size: 11px; color: var(--muted); font-family: ui-monospace, SFMono-Regular, monospace; }
+  audio { width: 100%; display: block; }
+  .outcome { margin-top: 22px; padding: 16px 18px; background: var(--panel); border-left: 2px solid var(--accent-dim); font-size: 13px; color: var(--muted); line-height: 1.55; max-width: 74ch; }
+  .outcome h3 { color: var(--ink); font-size: 13px; margin: 0 0 10px; font-weight: 500; }
+  .outcome ul { margin: 0 0 0 18px; padding: 0; }
+  .outcome li { margin: 4px 0; }
+  .outcome li b { color: var(--ink); }
+  .outcome .pass { color: var(--pass); font-weight: 500; }
+  .outcome .partial { color: var(--partial); font-weight: 500; }
+  .outcome .fail { color: var(--fail); font-weight: 500; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Sacred archetype probe — Western Wall v2 grammar</h1>
+    <p class="subtitle">
+      3 takes × 12s of the v2 sacred-exterior prompt at <code>prompt_influence: 0.3</code>. Each take is an independent generation of the same prompt — no seed exists on ElevenLabs Sound Effects, so N=3 shows variance, not layering. Single PCM source per take; MP3 192 is the transcode we'd actually ship. WAV included only so you can hear the master the MP3 was made from if you want.
+    </p>
+
+    <div class="factbox">
+      <h3>What we're listening for</h3>
+      <ul>
+        <li><b>Archetype fit:</b> does it feel like a broad stone plaza against a massive wall in daylight, or does it feel like a church interior / echo chamber / something unrelated?</li>
+        <li><b>Event distance:</b> are the "cloth movement" and "paper rustle" appropriately distant and occasional, or over-dramatized foreground like the library v2 was?</li>
+        <li><b>Quiet-content quality:</b> sacred is sparse like library. Any scratchiness on the quiet passages is model noise floor (codec question already settled on library A/B).</li>
+      </ul>
+    </div>
+
+    <div class="factbox">
+      <h3>Gates</h3>
+      <ul>
+        <li><span class="pass">Pass</span> — ≥2 of 3 takes feel sacred-exterior-plaza. Grammar locked for this archetype. Next probe: market/street, domestic, museum, or cave.</li>
+        <li><span class="partial">Partial</span> — takes are sacred-ish but events over-dramatized. Tweak prompt with explicit distance markers ("far away", "barely audible"); re-probe.</li>
+        <li><span class="fail">Fail</span> — sounds like something else entirely. Rewrite the sacred template from scratch.</li>
+      </ul>
+    </div>
+
+    <div class="prompt">
+      Large stone plaza against a massive ancient wall in daylight, listener standing a few meters from the wall, very distant diffuse prayer presence blended into ambience, sparse cloth movement and occasional paper rustle, broad open-sky reverb off cut stone, restrained and contemplative, no foreground speech, no music, seamless ambient loop
+    </div>
+  </header>
+
+  <main>
+    <div class="take-group">
+      <h3>Take 1</h3>
+      <div class="codecs">
+        <div class="codec">
+          <div class="codec-label">
+            <span class="name">WAV</span>
+            <span class="type-tag lossless">Lossless master</span>
+            <span class="size">2.3 MB</span>
+          </div>
+          <audio controls preload="none" src="take_1.wav"></audio>
+        </div>
+        <div class="codec">
+          <div class="codec-label">
+            <span class="name">MP3 192</span>
+            <span class="type-tag lossy">Delivery format</span>
+            <span class="size">289 KB · 8× smaller</span>
+          </div>
+          <audio controls preload="none" src="take_1.mp3"></audio>
+        </div>
+      </div>
+    </div>
+
+    <div class="take-group">
+      <h3>Take 2</h3>
+      <div class="codecs">
+        <div class="codec">
+          <div class="codec-label">
+            <span class="name">WAV</span>
+            <span class="type-tag lossless">Lossless master</span>
+            <span class="size">2.3 MB</span>
+          </div>
+          <audio controls preload="none" src="take_2.wav"></audio>
+        </div>
+        <div class="codec">
+          <div class="codec-label">
+            <span class="name">MP3 192</span>
+            <span class="type-tag lossy">Delivery format</span>
+            <span class="size">289 KB · 8× smaller</span>
+          </div>
+          <audio controls preload="none" src="take_2.mp3"></audio>
+        </div>
+      </div>
+    </div>
+
+    <div class="take-group">
+      <h3>Take 3</h3>
+      <div class="codecs">
+        <div class="codec">
+          <div class="codec-label">
+            <span class="name">WAV</span>
+            <span class="type-tag lossless">Lossless master</span>
+            <span class="size">2.3 MB</span>
+          </div>
+          <audio controls preload="none" src="take_3.wav"></audio>
+        </div>
+        <div class="codec">
+          <div class="codec-label">
+            <span class="name">MP3 192</span>
+            <span class="type-tag lossy">Delivery format</span>
+            <span class="size">289 KB · 8× smaller</span>
+          </div>
+          <audio controls preload="none" src="take_3.mp3"></audio>
+        </div>
+      </div>
+    </div>
+
+    <div class="outcome">
+      <h3>Session state</h3>
+      <ul>
+        <li>Credits spent this probe: <b>720</b> (3 × 12s × 20 credits/sec)</li>
+        <li>Credits spent on this plan cumulative: <b>7,560</b> (1.51% of 500k monthly)</li>
+        <li>Archetypes validated so far: <b>library</b> (grammar + codec), <b>beach</b> (grammar + codec)</li>
+        <li>Archetypes probed, awaiting your verdict: <b>sacred</b> (this page)</li>
+        <li>Archetypes remaining to probe: market/street, domestic, museum, cave</li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Library codec test — same source, 3 encodings</title>
+<style>
+  :root {
+    --bg: #0e0e12;
+    --panel: #17171d;
+    --ink: #e6e6ea;
+    --muted: #8a8a95;
+    --accent: #c9a14a;
+    --accent-dim: #7a6330;
+    --line: #23232c;
+    --lossless: #5a8fb0;
+    --lossy: #b06d3a;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; padding: 0; }
+  header { padding: 24px 32px 12px; border-bottom: 1px solid var(--line); }
+  h1 { font-weight: 500; font-size: 20px; margin: 0 0 6px; letter-spacing: 0.01em; }
+  .subtitle { color: var(--muted); font-size: 13px; max-width: 70ch; line-height: 1.5; }
+  .subtitle code { background: var(--panel); padding: 1px 6px; border-radius: 3px; font-size: 12px; }
+  .factbox { margin-top: 14px; padding: 12px 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 4px; font-size: 13px; color: var(--ink); line-height: 1.55; }
+  .factbox h3 { margin: 0 0 8px; font-size: 13px; font-weight: 500; color: var(--accent); }
+  .factbox ul { margin: 0 0 0 18px; padding: 0; }
+  .factbox li { margin: 3px 0; }
+  .prompt { margin-top: 10px; padding: 10px 14px; background: var(--bg); border-left: 2px solid var(--accent-dim); font-size: 12px; color: var(--muted); font-style: italic; line-height: 1.5; }
+  main { padding: 18px 32px 32px; max-width: 1080px; }
+  .take-group { margin-top: 14px; padding: 16px 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+  .take-group h3 { font-size: 14px; font-weight: 500; margin: 0 0 10px; color: var(--ink); }
+  .codecs { display: grid; gap: 10px; }
+  .codec { padding: 10px 12px; background: var(--bg); border: 1px solid var(--line); border-radius: 4px; transition: border-color 120ms ease; }
+  .codec.playing { border-color: var(--accent-dim); }
+  .codec-label { display: flex; align-items: baseline; gap: 10px; margin-bottom: 6px; flex-wrap: wrap; }
+  .codec-label .name { font-size: 13px; font-weight: 500; }
+  .codec-label .type-tag { font-size: 10px; padding: 1px 6px; border-radius: 2px; font-weight: 500; letter-spacing: 0.03em; text-transform: uppercase; }
+  .codec-label .type-tag.lossless { background: rgba(90,143,176,0.18); color: var(--lossless); }
+  .codec-label .type-tag.lossy { background: rgba(176,109,58,0.18); color: var(--lossy); }
+  .codec-label .size { font-size: 11px; color: var(--muted); font-family: ui-monospace, SFMono-Regular, monospace; }
+  audio { width: 100%; display: block; }
+  .controls { display: flex; gap: 10px; align-items: center; margin-top: 6px; }
+  .controls label { font-size: 11px; color: var(--muted); display: flex; align-items: center; gap: 4px; cursor: pointer; }
+  .controls input[type="checkbox"] { accent-color: var(--accent); }
+  .outcome { margin-top: 22px; padding: 16px 18px; background: var(--panel); border-left: 2px solid var(--accent-dim); font-size: 13px; color: var(--muted); line-height: 1.55; }
+  .outcome h3 { color: var(--ink); font-size: 13px; margin: 0 0 10px; font-weight: 500; }
+  .outcome ul { margin: 0 0 0 18px; padding: 0; }
+  .outcome li { margin: 4px 0; }
+  .outcome li b { color: var(--ink); }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Library codec test — 1 take × 3 encodings</h1>
+    <p class="subtitle">
+      Settling the open question from the library grammar probe: was the "scratchy" quality caused by MP3 compression or by the model's own noise floor? Single PCM source re-encoded to WAV, MP3 192, and MP3 128. Only variable is codec.
+      22 seconds, <code>prompt_influence: 0.5</code>. Opus not included — confirmed blocked in Safari.
+    </p>
+
+    <div class="factbox">
+      <h3>How to tell codec from model</h3>
+      <ul>
+        <li><b>If WAV sounds scratchy too:</b> the model is the source of the noise. MP3 is not the culprit. No change to delivery format needed.</li>
+        <li><b>If WAV is clean and MP3 192 is scratchy:</b> compression is adding audible grain on sparse/quiet content. We'd need to consider lossless delivery for library-archetype scenes specifically, OR accept the grain as an acceptable tradeoff for size.</li>
+        <li><b>If MP3 192 is clean and MP3 128 is scratchy:</b> 192 is fine; 128 is the floor.</li>
+      </ul>
+    </div>
+
+    <div class="prompt">
+      Large old stone library in daylight, listener seated between shelves, soft page rustle and cloth movement, very distant hushed study presence, sparse wood chair creaks, restrained natural reverb, calm and civilized, no close speech, no music, seamless ambient loop
+    </div>
+  </header>
+
+  <main>
+    <div class="take-group">
+      <h3>Take 1 — same PCM source in 3 encodings</h3>
+      <div class="codecs" id="codecs"></div>
+    </div>
+
+    <div class="outcome">
+      <h3>Remember from the earlier beach A/B</h3>
+      <ul>
+        <li>You heard no meaningful difference between WAV, MP3 192, and MP3 128 on beach (broadband content).</li>
+        <li>Beach has lots of masking. Library has almost none. This test asks whether that matters.</li>
+      </ul>
+    </div>
+  </main>
+
+<script>
+const CODECS = [
+  { id: "wav", name: "WAV — lossless (PCM source)", type: "lossless", size: "4.0 MB", file: "take_1.wav" },
+  { id: "mp3_192", name: "MP3 192 kbps — lossy", type: "lossy", size: "517 KB (8× smaller)", file: "take_1_mp3_192.mp3" },
+  { id: "mp3_128", name: "MP3 128 kbps — lossy (more aggressive)", type: "lossy", size: "345 KB (12× smaller)", file: "take_1_mp3_128.mp3" },
+];
+
+function el(tag, attrs, children) {
+  const node = document.createElement(tag);
+  if (attrs) {
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === "class") node.className = v;
+      else if (k === "text") node.textContent = v;
+      else node.setAttribute(k, v);
+    }
+  }
+  if (children) for (const c of children) if (c != null) node.appendChild(c);
+  return node;
+}
+
+function buildCodec(c) {
+  const audioId = `a-${c.id}`;
+  const audio = el("audio", { id: audioId, src: c.file, controls: "", preload: "auto", loop: "" });
+  const cb = el("input", { type: "checkbox", id: `loop-${c.id}`, checked: "" });
+  const loopLabel = el("label", {}, [cb, document.createTextNode(" loop")]);
+  const controls = el("div", { class: "controls" }, [loopLabel]);
+
+  const label = el("div", { class: "codec-label" }, [
+    el("span", { class: "name", text: c.name }),
+    el("span", { class: `type-tag ${c.type}`, text: c.type }),
+    el("span", { class: "size", text: c.size }),
+  ]);
+
+  return el("div", { class: "codec" }, [label, audio, controls]);
+}
+
+const container = document.getElementById("codecs");
+CODECS.forEach(c => container.appendChild(buildCodec(c)));
+
+const audios = Array.from(document.querySelectorAll("audio"));
+audios.forEach(a => {
+  a.addEventListener("play", () => {
+    audios.forEach(other => {
+      if (other !== a) other.pause();
+      other.parentElement.classList.remove("playing");
+    });
+    a.parentElement.classList.add("playing");
+  });
+  a.addEventListener("pause", () => a.parentElement.classList.remove("playing"));
+});
+
+CODECS.forEach(c => {
+  const a = document.getElementById(`a-${c.id}`);
+  const cb = document.getElementById(`loop-${c.id}`);
+  cb.addEventListener("change", () => { a.loop = cb.checked; });
+});
+</script>
+</body>
+</html>

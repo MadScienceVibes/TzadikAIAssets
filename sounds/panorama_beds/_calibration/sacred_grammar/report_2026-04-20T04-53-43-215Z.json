@@ -1,0 +1,40 @@
+{
+  "archetype": "sacred_grammar",
+  "prompt_file": "backend/scripts/elevenlabs/prompts/western_wall_v2.txt",
+  "prompt_text": "Large stone plaza against a massive ancient wall in daylight, listener standing a few meters from the wall, very distant diffuse prayer presence blended into ambience, sparse cloth movement and occasional paper rustle, broad open-sky reverb off cut stone, restrained and contemplative, no foreground speech, no music, seamless ambient loop",
+  "prompt_length": 339,
+  "duration_seconds": 12,
+  "prompt_influence": 0.3,
+  "output_format": "pcm_48000",
+  "total_credits_charged": 720,
+  "ran_at": "2026-04-20T04:53:57.282Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1776660828322-1",
+      "http_status": 200,
+      "credits_charged": 240,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 2304000,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/sacred_grammar/take_1.pcm"
+    },
+    {
+      "take": 2,
+      "request_id": "local-1776660832850-2",
+      "http_status": 200,
+      "credits_charged": 240,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 2304000,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/sacred_grammar/take_2.pcm"
+    },
+    {
+      "take": 3,
+      "request_id": "local-1776660837281-3",
+      "http_status": 200,
+      "credits_charged": 240,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 2304000,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/sacred_grammar/take_3.pcm"
+    }
+  ]
+}
