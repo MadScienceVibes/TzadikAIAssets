@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Test batch 2 v1 — QC</title>
+<style>
+  body{font:14px/1.5 -apple-system,system-ui,sans-serif;max-width:840px;margin:1.5em auto;padding:0 1em;color:#222}
+  h1{font-size:18px;margin-bottom:.2em}
+  h2{font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:#444;margin:1em 0 .3em 0}
+  .meta{color:#666;font-size:13px;margin-bottom:1.2em}
+  .panel{border:1px solid #ddd;border-radius:8px;padding:1em 1.25em;margin:1em 0;background:#fafafa}
+  .panel.gate{background:#fffbe6;border-color:#f0d57a}
+  audio{width:100%;margin-top:.4em}
+  pre{background:#f4f4f4;padding:.5em .7em;border-radius:4px;font-size:12px;white-space:pre-wrap;color:#333}
+  .stats{font:12px monospace;color:#888;margin-top:.4em}
+  .gate-test{font-size:13px;color:#444;margin-top:.4em}
+</style>
+</head>
+<body>
+  <h1>Test batch 2 v1 — 4 different content types</h1>
+  <div class="meta">
+    660 credits, 4 generations covering 4 different categories. Goal: confirm canonical grammar works for animal vocalization, close-perspective domestic event, continuous locomotion layer, and human vocalization.
+  </div>
+
+  <div class="panel gate">
+    <h2 style="margin-top:0">1. Camel vocalization (replacing cut 063 — was not a camel)</h2>
+    <div class="gate-test">Listen for: low rumbling growl-grunt, throaty/gurgling character, single camel close.</div>
+    <audio controls src="../camel_vocalization_v1/processed_v1.mp3"></audio>
+    <div class="stats">4s · src=−21.5 LUFS · −0.5 dB · model confident</div>
+    <pre>Single adult camel close perspective, low rumbling growl-grunt vocalization with characteristic gurgling throaty quality, sustained breath behind the call, dry desert outdoor space, no other animals, no human presence, no music</pre>
+  </div>
+
+  <div class="panel gate">
+    <h2 style="margin-top:0">2. Water pour from clay jug (replacing cut 377 — was electronic)</h2>
+    <div class="gate-test">Listen for: real splashy water hitting empty bowl bottom transitioning to pouring into accumulating water, organic liquid character, no electronic harshness.</div>
+    <audio controls src="../water_pour_clay_jug_v1/processed_v1.mp3"></audio>
+    <div class="stats">4s · src=−23.1 LUFS · +1.1 dB · model confident</div>
+    <pre>Pouring water steadily from a small clay jug into a wider clay vessel, splashy stream of water hitting bottom of empty bowl then accumulating water surface, close perspective, brief quiet at end, no voices, no music</pre>
+  </div>
+
+  <div class="panel gate">
+    <h2 style="margin-top:0">3. Sand walking continuous (locomotion ambient layer — long format)</h2>
+    <div class="gate-test">Listen for: natural irregular footstep pacing, soft crunchy sand sound, robe drag in between, NO machine-gun repetition.</div>
+    <audio controls loop src="../sand_walking_continuous_v1/processed_v1.mp3"></audio>
+    <div class="stats">22s · src=−36.3 LUFS · +14.3 dB ← borderline noise-floor risk, listen for hum</div>
+    <pre>Continuous casual walking on dry loose sand outdoors, single person at moderate pace, soft crunchy sand grains compressing under sandals with each step, slight robe drag between steps, varied stride pacing not metronomic, hot dry desert air, no voices, no animals, no music, seamless ambient loop</pre>
+  </div>
+
+  <div class="panel gate">
+    <h2 style="margin-top:0">4. Single male laugh (replacing cut 089 — didn't sound like a laugh)</h2>
+    <div class="gate-test">Listen for: warm genuine male laugh, 3–4 chest pulses, exhale at end, no awkward forced quality.</div>
+    <audio controls src="../single_male_laugh_v1/processed_v1.mp3"></audio>
+    <div class="stats">3s · src=−21.5 LUFS · −0.5 dB · model confident</div>
+    <pre>Single adult male laughing genuinely, three to four pulses of warm chest-deep laughter ending in a soft exhale, no words, no music, close perspective, natural recording</pre>
+  </div>
+
+  <div class="panel">
+    <h2 style="margin-top:0">Validation goal</h2>
+    <p>If 3+ of 4 pass, canonical grammar is validated across diverse content types and we scale up. If 2+ fail, more grammar iteration before scale.</p>
+    <p>Current cumulative scoring across batches 1+2: <b>5/8 confident pass</b> (rain, cicada, camel, water_pour, laugh likely + cricket marginal). Locomotion long-take is the new frontier — scaling will depend on whether that works.</p>
+  </div>
+</body>
+</html>

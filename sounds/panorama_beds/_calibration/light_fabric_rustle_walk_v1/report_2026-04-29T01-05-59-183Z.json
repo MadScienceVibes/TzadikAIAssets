@@ -1,0 +1,22 @@
+{
+  "archetype": "light_fabric_rustle_walk_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/light_fabric_rustle_walk_v1.txt",
+  "prompt_text": "Light linen robe fabric softly rustling as a person walks at moderate pace, gentle cloth-on-cloth swish with each step, no metallic clanging, no harshness, soft natural fabric character, close perspective, no voices, no music",
+  "prompt_length": 225,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-04-29T01:06:02.594Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777424762593-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/light_fabric_rustle_walk_v1/take_1.mp3"
+    }
+  ]
+}

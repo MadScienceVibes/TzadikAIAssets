@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>desert_tents — production take QC</title>
+<style>
+  body{font:15px/1.5 -apple-system,system-ui,sans-serif;max-width:760px;margin:2em auto;padding:0 1em;color:#222}
+  h1{font-size:18px;margin-bottom:.2em}
+  .meta{color:#666;font-size:13px;margin-bottom:1.5em}
+  .panel{border:1px solid #ddd;border-radius:8px;padding:1em 1.25em;margin:1em 0;background:#fafafa}
+  .panel h2{margin:0 0 .4em 0;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:#444}
+  audio{width:100%;margin-top:.4em}
+  pre{background:#f4f4f4;padding:.6em .8em;border-radius:4px;font-size:12px;white-space:pre-wrap;color:#333}
+  .gate{background:#fffbe6;border-color:#f0d57a}
+</style>
+</head>
+<body>
+  <h1>desert_tents — production take (QC before ship)</h1>
+  <div class="meta">
+    1 × 22s · prompt_influence 0.5 · 440 credits · source −41.0 LUFS → +23 dB gain → output −22.8 LUFS, LRA 5.7
+    <br/>processed via locked chain: highpass=100, afftdn=nr=24:nf=-50, volume=Ndb
+  </div>
+
+  <div class="panel gate">
+    <h2>gain-only (no denoise, no highpass) — listen first</h2>
+    <p>Same raw take, just +18 dB flat gain. Hypothesis: the forest-calibrated chain was eating wind content. This variant preserves everything.</p>
+    <audio controls src="gainonly_-22LUFS.mp3"></audio>
+  </div>
+
+  <div class="panel">
+    <h2>shipped (denoise + highpass + gain — the &ldquo;noisy wind&rdquo; one)</h2>
+    <audio controls src="../../day/approved/desert_tents.mp3"></audio>
+  </div>
+
+  <div class="panel">
+    <h2>raw take 1 (unprocessed — very quiet, you said &ldquo;slightly less bad&rdquo;)</h2>
+    <audio controls src="take_1.mp3"></audio>
+  </div>
+
+  <div class="panel">
+    <h2>Listening criteria</h2>
+    <ul>
+      <li><b>Archetype fit:</b> wide open desert with tents, midday — not a beach, not a forest, not an indoor space.</li>
+      <li><b>Spatial feel:</b> open air, no enclosed reverb. Wind feels broad, not tight.</li>
+      <li><b>Event distance:</b> goat bleat (if it appears) feels distant, not foreground. Canvas flap feels nearby but not in your face.</li>
+      <li><b>Hum check:</b> calibrated chain should suppress any model noise floor — listen for the same residual texture forest had.</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h2>Prompt</h2>
+    <pre>Wide open desert at midday, steady warm wind across loose sand and dunes, soft canvas tent fabric flapping nearby in the breeze, occasional rope creak and tent stake settling, distant goat bleat now and then, fine grains of sand drifting across the ground, dry hot air with wide-open spatial feel, no voices, no music, seamless ambient loop</pre>
+  </div>
+</body>
+</html>

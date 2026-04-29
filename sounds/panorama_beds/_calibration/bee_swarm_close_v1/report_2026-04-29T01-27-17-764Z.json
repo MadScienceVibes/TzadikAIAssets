@@ -1,0 +1,22 @@
+{
+  "archetype": "bee_swarm_close_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/bee_swarm_close_v1.txt",
+  "prompt_text": "Close swarm of bees buzzing in flight near a hive, dense overlapping buzz of many wings, occasional individual bees passing close to listener, warm summer outdoor air, no other animals, no human presence, no music",
+  "prompt_length": 213,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-04-29T01:27:22.009Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777426042008-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/bee_swarm_close_v1/take_1.mp3"
+    }
+  ]
+}

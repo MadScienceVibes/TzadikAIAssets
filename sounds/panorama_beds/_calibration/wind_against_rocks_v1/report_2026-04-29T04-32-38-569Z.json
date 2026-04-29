@@ -1,0 +1,22 @@
+{
+  "archetype": "wind_against_rocks_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/wind_against_rocks_v1.txt",
+  "prompt_text": "Strong wind whistling sharply against weathered rock outcroppings outdoors, high-pitched air-on-stone tone with steady sustained texture, no animals, no music, seamless ambient loop",
+  "prompt_length": 181,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T04:32:44.273Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437164273-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/wind_against_rocks_v1/take_1.mp3"
+    }
+  ]
+}

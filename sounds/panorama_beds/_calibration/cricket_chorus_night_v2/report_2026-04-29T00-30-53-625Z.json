@@ -1,0 +1,22 @@
+{
+  "archetype": "cricket_chorus_night_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/cricket_chorus_night_v2.txt",
+  "prompt_text": "Quiet country meadow at night with a chorus of field crickets chirping, each cricket producing short rhythmic pulses with silent pauses between, peaceful summer countryside, sparse soft grass rustle, no continuous buzzing drone, no human presence, no wind, no music, seamless ambient loop",
+  "prompt_length": 288,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T00:30:59.863Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777422659862-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/cricket_chorus_night_v2/take_1.mp3"
+    }
+  ]
+}

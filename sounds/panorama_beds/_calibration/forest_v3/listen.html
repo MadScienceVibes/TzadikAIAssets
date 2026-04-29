@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>forest_v3 (calm) — production take QC</title>
+<style>
+  body{font:15px/1.5 -apple-system,system-ui,sans-serif;max-width:760px;margin:2em auto;padding:0 1em;color:#222}
+  h1{font-size:18px;margin-bottom:.2em}
+  .meta{color:#666;font-size:13px;margin-bottom:1.5em}
+  .panel{border:1px solid #ddd;border-radius:8px;padding:1em 1.25em;margin:1em 0;background:#fafafa}
+  .panel h2{margin:0 0 .4em 0;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:#444}
+  audio{width:100%;margin-top:.4em}
+  pre{background:#f4f4f4;padding:.6em .8em;border-radius:4px;font-size:12px;white-space:pre-wrap;color:#333}
+  .gate{background:#fffbe6;border-color:#f0d57a}
+</style>
+</head>
+<body>
+  <h1>forest_v3 — calm version (no wind in bed; weather layers added separately)</h1>
+  <div class="meta">
+    1 × 22s · prompt_influence 0.5 · 440 credits · forest chain (highpass+afftdn+gain)<br/>
+    source −28.4 LUFS → +10.4 dB gain → output −18.1 LUFS, LRA 19.8 (high — possible loud transients)
+  </div>
+
+  <div class="panel gate">
+    <h2>Shipped (replaces previous wind-baked forest.mp3)</h2>
+    <audio controls loop src="../../day/approved/forest.mp3"></audio>
+  </div>
+
+  <div class="panel">
+    <h2>Raw take</h2>
+    <audio controls src="take_1.mp3"></audio>
+  </div>
+
+  <div class="panel">
+    <h2>Listening criteria</h2>
+    <ul>
+      <li>Bird chorus, leaf rustle, calm forest character</li>
+      <li>NO wind whoosh / no audible breeze</li>
+      <li>Loops cleanly — listen for the seam at ~22s</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h2>Prompt v3</h2>
+    <pre>Lively summer woodland in midday sun, dense and active bird chorus close and far including warblers chickadees and wrens, gentle leaf shimmer from foliage settling, occasional acorn fall and twig crackle on dry ground, distant woodpecker tapping, soft insect drone weaving through branches, calm still forest air, no wind, no voices, no music, seamless ambient loop</pre>
+  </div>
+</body>
+</html>

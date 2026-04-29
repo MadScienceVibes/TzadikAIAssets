@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Test batch 1 retries — v2 vs v1</title>
+<style>
+  body{font:14px/1.5 -apple-system,system-ui,sans-serif;max-width:840px;margin:1.5em auto;padding:0 1em;color:#222}
+  h1{font-size:18px;margin-bottom:.2em}
+  h2{font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:#444;margin:1em 0 .3em 0}
+  .meta{color:#666;font-size:13px;margin-bottom:1.2em}
+  .panel{border:1px solid #ddd;border-radius:8px;padding:1em 1.25em;margin:1em 0;background:#fafafa}
+  .panel.gate{background:#fffbe6;border-color:#f0d57a}
+  .panel.warn{background:#fff0f0;border-color:#e0a0a0}
+  audio{width:100%;margin-top:.4em}
+  pre{background:#f4f4f4;padding:.5em .7em;border-radius:4px;font-size:12px;white-space:pre-wrap;color:#333}
+  .stats{font:12px monospace;color:#888;margin-top:.4em}
+  .ab{display:grid;grid-template-columns:1fr 1fr;gap:.8em;margin-top:.6em}
+  .col h3{font-size:12px;text-transform:uppercase;color:#666;margin:.3em 0;letter-spacing:.04em}
+</style>
+</head>
+<body>
+  <h1>Test batch 1 retries — v2 vs v1 A/B</h1>
+  <div class="meta">
+    Two retries, 880 credits. Heavy_rain and cicada_chorus already passed v1 — not regenerated.
+  </div>
+
+  <div class="panel gate">
+    <h2 style="margin-top:0">Cricket chorus — v2 vs v1</h2>
+    <p>v1 didn't sound like cricket chirps. v2 simplified the prompt and added explicit "no continuous buzzing drone" negative. v2 source loudness is −16 LUFS (louder than v1's −11.3 — model engaged more confidently).</p>
+    <div class="ab">
+      <div class="col">
+        <h3>v2 (new)</h3>
+        <audio controls loop src="../cricket_chorus_night_v2/processed_v1.mp3"></audio>
+        <div class="stats">−16 LUFS src · −22.3 LUFS out</div>
+      </div>
+      <div class="col">
+        <h3>v1 (original — failed)</h3>
+        <audio controls loop src="../cricket_chorus_night_v1/processed_v1.mp3"></audio>
+        <div class="stats">−11.3 LUFS src · −22.3 LUFS out</div>
+      </div>
+    </div>
+    <pre>v2: Quiet country meadow at night with a chorus of field crickets chirping, each cricket producing short rhythmic pulses with silent pauses between, peaceful summer countryside, sparse soft grass rustle, no continuous buzzing drone, no human presence, no wind, no music, seamless ambient loop</pre>
+  </div>
+
+  <div class="panel warn">
+    <h2 style="margin-top:0">Distant village murmur — v2 vs v1 (v2 may have hum issue)</h2>
+    <p>v1 sounded indoor/stadium and not distant. v2 pushed harder on distance and added "no enclosed reverb" / "no stadium feel" negatives — but v2 source came in at <b>−54 LUFS</b> (near-silence regime). After 32 dB gain to bring it to listenable, may have noise floor hum like the failed desert_tents calm attempts.</p>
+    <div class="ab">
+      <div class="col">
+        <h3>v2 (new — risk)</h3>
+        <audio controls loop src="../distant_village_murmur_v2/processed_v1.mp3"></audio>
+        <div class="stats">−54 LUFS src · +32 dB gain · −22.2 LUFS out</div>
+      </div>
+      <div class="col">
+        <h3>v1 (original — too close)</h3>
+        <audio controls loop src="../distant_village_murmur_v1/processed_v1.mp3"></audio>
+        <div class="stats">−34.2 LUFS src · +12 dB gain · −22.2 LUFS out</div>
+      </div>
+    </div>
+    <pre>v2: Vast quiet outdoor plain at midday with very faint trace of distant village life across open landscape, listener standing alone in expansive empty desert space, barely audible faint adult voice wash carried thinly from very far away, sparse hint of distant cart movement at the absolute edge of hearing, dry hot still air, almost silent surroundings, no nearby presence, no enclosed reverb, no stadium feel, no music, seamless ambient loop</pre>
+    <p>If v2 hums, the lesson is: the model can't produce useful "barely audible distant wash" — the calm-bed-with-content limit. May need to accept v1's nearer perspective and re-frame as "outdoor mid-distance crowd" instead of trying for "edge of perception."</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>mount_sinai — production take QC</title>
+<style>
+  body{font:15px/1.5 -apple-system,system-ui,sans-serif;max-width:760px;margin:2em auto;padding:0 1em;color:#222}
+  h1{font-size:18px;margin-bottom:.2em}
+  .meta{color:#666;font-size:13px;margin-bottom:1.5em}
+  .panel{border:1px solid #ddd;border-radius:8px;padding:1em 1.25em;margin:1em 0;background:#fafafa}
+  .panel h2{margin:0 0 .4em 0;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:#444}
+  audio{width:100%;margin-top:.4em}
+  pre{background:#f4f4f4;padding:.6em .8em;border-radius:4px;font-size:12px;white-space:pre-wrap;color:#333}
+  .gate{background:#fffbe6;border-color:#f0d57a}
+</style>
+</head>
+<body>
+  <h1>mount_sinai — production take (QC before ship)</h1>
+  <div class="meta">
+    Full 22s take, wind chain at −28.3 LUFS (6 dB quieter than first shipped attempt). Zero new credits.
+  </div>
+
+  <div class="panel gate">
+    <h2>Shipped (full 22s take at −28 LUFS — quieter, less dramatic)</h2>
+    <audio controls loop src="../../day/approved/mount_sinai.mp3"></audio>
+  </div>
+
+  <div class="panel">
+    <h2>Raw take 1 (unprocessed)</h2>
+    <audio controls src="take_1.mp3"></audio>
+  </div>
+
+  <div class="panel">
+    <h2>Raw take 1 (unprocessed — very quiet)</h2>
+    <audio controls src="take_1.mp3"></audio>
+  </div>
+
+  <div class="panel">
+    <h2>Listening criteria</h2>
+    <ul>
+      <li><b>Archetype fit:</b> windswept rocky mountaintop — not desert dunes, not forest, not enclosed.</li>
+      <li><b>Wind character:</b> whistling across rock (sharper) vs across sand (rounder). Should feel different from desert_tents.</li>
+      <li><b>Spatial feel:</b> wide open, no enclosure, no reverb tail.</li>
+      <li><b>Hum check:</b> wind chain skips denoise — listen for whether the wind itself sounds natural or noise-like.</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h2>Prompt</h2>
+    <pre>Vast windswept rocky mountaintop at midday, steady dry wind whistling across exposed limestone and granite outcroppings, scattered loose pebbles shifting in the breeze, occasional distant raven cry now and then, fine grit and sand drifting between rocks, wide open sky with no enclosure, dry hot mountain air, no voices, no music, seamless ambient loop</pre>
+  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "archetype": "nightingale_song_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/nightingale_song_v1.txt",
+  "prompt_text": "Single nightingale singing in evening outdoors, melodic song with varied trills and clear whistles, close perspective, no other animals, no human presence, no music",
+  "prompt_length": 164,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-04-29T01:27:11.511Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777426031510-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/nightingale_song_v1/take_1.mp3"
+    }
+  ]
+}

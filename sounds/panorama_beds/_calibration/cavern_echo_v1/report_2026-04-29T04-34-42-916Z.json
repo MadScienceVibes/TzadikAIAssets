@@ -1,0 +1,22 @@
+{
+  "archetype": "cavern_echo_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/cavern_echo_v1.txt",
+  "prompt_text": "Large underground cavern interior, deep continuous low atmospheric tone of vast enclosed air with occasional water drip echo, profound spacious reverb, no voices, no music, seamless ambient loop",
+  "prompt_length": 194,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-04-29T04:34:48.398Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437288397-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/cavern_echo_v1/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "garden_orchard_birds_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/garden_orchard_birds_v1.txt",
+  "prompt_text": "Lush garden orchard at midday, gentle rustle of fruit-tree leaves in still air, scattered chirping of small songbirds at varied distances, occasional distant dove cooing, soft warm air with broad open feel, no human presence, no wind, no music, seamless ambient loop",
+  "prompt_length": 266,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T01:07:04.713Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777424824712-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/garden_orchard_birds_v1/take_1.mp3"
+    }
+  ]
+}

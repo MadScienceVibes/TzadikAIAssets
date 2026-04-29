@@ -1,0 +1,22 @@
+{
+  "archetype": "olive_press_squeezing_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/olive_press_squeezing_v1.txt",
+  "prompt_text": "Stone olive press at work crushing olives, slow grinding stone-on-stone scrape with deep low rumble, occasional drip of olive oil into a stone basin, close perspective, no voices, no music",
+  "prompt_length": 188,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-04-29T01:28:20.713Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777426100713-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/olive_press_squeezing_v1/take_1.mp3"
+    }
+  ]
+}

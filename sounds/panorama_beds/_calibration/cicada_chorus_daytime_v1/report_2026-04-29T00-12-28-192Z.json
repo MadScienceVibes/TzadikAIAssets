@@ -1,0 +1,22 @@
+{
+  "archetype": "cicada_chorus_daytime_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/cicada_chorus_daytime_v1.txt",
+  "prompt_text": "Hot Mediterranean summer afternoon outdoor scene, listener standing in olive grove, sustained continuous high-frequency mechanical whine of cicada chorus filling the air close and far, no rhythmic pulses, dense daytime drone almost electronic in character, peak energy in upper midrange, warm dry air, midday under bright sun, no individual chirps audible, no birds, no wind, no music, seamless ambient loop",
+  "prompt_length": 407,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T00:12:34.993Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777421554993-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/cicada_chorus_daytime_v1/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "egypt_ancient_marketplace_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/egypt_ancient_marketplace_v1.txt",
+  "prompt_text": "Outdoor ancient Egyptian marketplace at midday, blended adult voice wash of vendors and customers in moderate distance, occasional cart rolling and donkey braying in the background, warm dry desert air, broad outdoor scene, no foreground specific voices, no music, seamless ambient loop",
+  "prompt_length": 286,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T04:34:07.612Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437247610-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/egypt_ancient_marketplace_v1/take_1.mp3"
+    }
+  ]
+}

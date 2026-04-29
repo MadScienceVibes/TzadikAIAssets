@@ -1,0 +1,22 @@
+{
+  "archetype": "distant_village_murmur_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/distant_village_murmur_v2.txt",
+  "prompt_text": "Vast quiet outdoor plain at midday with very faint trace of distant village life across open landscape, listener standing alone in expansive empty desert space, barely audible faint adult voice wash carried thinly from very far away, sparse hint of distant cart movement at the absolute edge of hearing, dry hot still air, almost silent surroundings, no nearby presence, no enclosed reverb, no stadium feel, no music, seamless ambient loop",
+  "prompt_length": 439,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T00:31:06.337Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777422666335-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/distant_village_murmur_v2/take_1.mp3"
+    }
+  ]
+}

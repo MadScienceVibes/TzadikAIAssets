@@ -1,0 +1,22 @@
+{
+  "archetype": "goat_flock_walking_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/goat_flock_walking_v1.txt",
+  "prompt_text": "Flock of about fifteen goats walking on rocky outdoor path, sharp clicking of hooves on stone surfaces, occasional brief bleat blended into ambience, sparse pebble shifts as goats move, no shepherd voice, no other animals, no music, seamless ambient loop",
+  "prompt_length": 254,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-04-29T01:06:52.600Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777424812598-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/goat_flock_walking_v1/take_1.mp3"
+    }
+  ]
+}

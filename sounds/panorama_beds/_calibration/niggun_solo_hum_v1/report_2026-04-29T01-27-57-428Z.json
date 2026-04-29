@@ -1,0 +1,22 @@
+{
+  "archetype": "niggun_solo_hum_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/niggun_solo_hum_v1.txt",
+  "prompt_text": "Single adult man humming a wordless niggun melody softly, gentle slow tune with subtle Eastern European Jewish folk character, contemplative pace, close perspective, no words, no other voices, no instruments",
+  "prompt_length": 207,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-04-29T01:28:02.339Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777426082339-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/niggun_solo_hum_v1/take_1.mp3"
+    }
+  ]
+}

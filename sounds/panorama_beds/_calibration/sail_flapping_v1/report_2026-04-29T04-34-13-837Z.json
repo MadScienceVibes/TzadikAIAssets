@@ -1,0 +1,22 @@
+{
+  "archetype": "sail_flapping_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/sail_flapping_v1.txt",
+  "prompt_text": "Large canvas ship sail flapping loosely in moderate breeze, characteristic snapping crack of fabric pulling taut and slack repeatedly, ropes creaking against the mast, outdoor ocean air, no voices, no music, seamless ambient loop",
+  "prompt_length": 229,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-04-29T04:34:18.810Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437258808-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/sail_flapping_v1/take_1.mp3"
+    }
+  ]
+}

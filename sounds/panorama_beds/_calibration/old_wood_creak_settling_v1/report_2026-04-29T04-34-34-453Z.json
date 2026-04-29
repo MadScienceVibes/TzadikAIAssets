@@ -1,0 +1,22 @@
+{
+  "archetype": "old_wood_creak_settling_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/old_wood_creak_settling_v1.txt",
+  "prompt_text": "Old wooden building or floor settling at night, sparse irregular creaks and pops of timber adjusting, quiet interior ambience, no voices, no animals, no music, seamless ambient loop",
+  "prompt_length": 181,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-04-29T04:34:38.301Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437278300-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/old_wood_creak_settling_v1/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "wind_through_wheat_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/wind_through_wheat_v1.txt",
+  "prompt_text": "Steady wind blowing across a wheat field outdoors, dry rustling whisper of countless wheat stalks bending and rubbing together, broad open agricultural texture, no birds, no music, seamless ambient loop",
+  "prompt_length": 202,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T04:32:32.421Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437152420-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/wind_through_wheat_v1/take_1.mp3"
+    }
+  ]
+}

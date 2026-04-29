@@ -1,0 +1,22 @@
+{
+  "archetype": "walking_wood_plank_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/walking_wood_plank_v1.txt",
+  "prompt_text": "Continuous casual walking on wooden plank floor indoors, single person at moderate pace, hollow knock of footsteps on resonant wood with slight creak under each step, varied stride pacing not metronomic, no voices, no animals, no music, seamless ambient loop",
+  "prompt_length": 258,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T01:06:37.270Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777424797268-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/walking_wood_plank_v1/take_1.mp3"
+    }
+  ]
+}

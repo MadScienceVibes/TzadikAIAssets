@@ -1,0 +1,22 @@
+{
+  "archetype": "wolf_pack_distant_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/wolf_pack_distant_v1.txt",
+  "prompt_text": "Pack of about six wolves howling from middle distance outdoors at night, overlapping howls at varied pitches, brief gaps between calls, no nearby animals, no human presence, no music",
+  "prompt_length": 182,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-04-29T01:26:52.387Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777426012387-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/wolf_pack_distant_v1/take_1.mp3"
+    }
+  ]
+}

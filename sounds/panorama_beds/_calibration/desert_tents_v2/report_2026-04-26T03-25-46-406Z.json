@@ -1,0 +1,22 @@
+{
+  "archetype": "desert_tents_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/desert_tents_v2.txt",
+  "prompt_text": "Hot still desert encampment at midday under bright sun, listener standing among canvas tents, soft fabric settling and rope creak as cloth contracts in the heat, occasional faint cicada or insect drone in the dry air, distant grain of sand grains shifting under their own weight, dry baked earth, calm motionless air, no wind, no breeze, no voices, no music, seamless ambient loop",
+  "prompt_length": 380,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-26T03:25:52.569Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777173952568-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/desert_tents_v2/take_1.mp3"
+    }
+  ]
+}

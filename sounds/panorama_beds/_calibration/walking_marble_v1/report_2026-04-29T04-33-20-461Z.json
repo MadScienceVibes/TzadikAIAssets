@@ -1,0 +1,22 @@
+{
+  "archetype": "walking_marble_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/walking_marble_v1.txt",
+  "prompt_text": "Continuous casual walking on polished marble floor indoors, sharp crisp click of leather sandals on hard smooth stone with brief slight echo, varied stride pacing not metronomic, no voices, no music, seamless ambient loop",
+  "prompt_length": 221,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-04-29T04:33:24.560Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437204559-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/walking_marble_v1/take_1.mp3"
+    }
+  ]
+}

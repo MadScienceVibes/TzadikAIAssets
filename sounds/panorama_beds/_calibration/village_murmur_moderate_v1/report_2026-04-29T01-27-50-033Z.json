@@ -1,0 +1,22 @@
+{
+  "archetype": "village_murmur_moderate_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/village_murmur_moderate_v1.txt",
+  "prompt_text": "Outdoor village square at midday with moderate population, blended adult voice wash from people going about their daily life thirty meters away, occasional cart roll and footsteps in the background, warm dry air, broad open-sky outdoor scene, no foreground voices, no music, seamless ambient loop",
+  "prompt_length": 296,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T01:27:55.691Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777426075686-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/village_murmur_moderate_v1/take_1.mp3"
+    }
+  ]
+}

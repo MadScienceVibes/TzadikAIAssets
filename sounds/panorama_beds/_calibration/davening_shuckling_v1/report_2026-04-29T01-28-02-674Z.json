@@ -1,0 +1,22 @@
+{
+  "archetype": "davening_shuckling_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/davening_shuckling_v1.txt",
+  "prompt_text": "Sound of a man davening with rhythmic body movement on a wooden synagogue bench, soft repeated bench creak from forward-and-back rocking, faint whispered prayer barely audible, close perspective, warm interior reverb, no foreground voice, no music, seamless ambient loop",
+  "prompt_length": 270,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-04-29T01:28:08.143Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777426088142-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/davening_shuckling_v1/take_1.mp3"
+    }
+  ]
+}

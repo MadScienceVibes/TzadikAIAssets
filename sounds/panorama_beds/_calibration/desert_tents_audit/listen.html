@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>desert_tents — existing SFX audit</title>
+<style>
+  body{font:15px/1.5 -apple-system,system-ui,sans-serif;max-width:820px;margin:2em auto;padding:0 1em;color:#222}
+  h1{font-size:18px;margin-bottom:.2em}
+  h2{font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:#444;margin-top:1.5em;margin-bottom:.3em}
+  .meta{color:#666;font-size:13px;margin-bottom:1.5em}
+  .row{display:grid;grid-template-columns:170px 1fr 50px 60px;gap:.5em;align-items:center;padding:.4em 0;border-bottom:1px dotted #eee}
+  .row .name{font:13px monospace;color:#333}
+  .row .desc{font-size:12px;color:#666}
+  .row .dur{font:12px monospace;color:#888;text-align:right}
+  audio{width:100%;height:32px}
+  .gate{background:#fffbe6;border:1px solid #f0d57a;border-radius:8px;padding:.8em 1em;margin:1em 0}
+  .good{background:#eef9ee;border-color:#a8d8a8}
+</style>
+</head>
+<body>
+  <h1>desert_tents — existing SFX audit (zero credits)</h1>
+  <div class="meta">
+    Auditing what's already in <code>TzadikAIAssets/sounds/sfx/</code> before generating anything new.<br/>
+    Goal: find a bed candidate, catalog reusable events, identify what (if anything) we still need to generate.
+  </div>
+
+  <div class="gate">
+    <h2 style="margin-top:0">Listen-test order</h2>
+    <p style="margin:.3em 0">1. Listen to the long-form bed candidates first (30s) — most likely to work as bed.<br/>
+    2. Then the short-loop ambients (1.5–2.25s) — may or may not loop seamlessly.<br/>
+    3. Then sample the event pool to confirm it's the kind of content we'd want to scatter.</p>
+  </div>
+
+  <h2>Long-form bed candidates (30s — most promising)</h2>
+  <div class="row">
+    <span class="name">453_crowd_whispering</span>
+    <span class="desc">Distant blended voices — closest to the "settlement wash" character we want</span>
+    <span class="dur">30s</span>
+    <audio controls loop src="../../../sfx/453_crowd_whispering.mp3"></audio>
+  </div>
+  <div class="row">
+    <span class="name">443_footsteps_on_gravel</span>
+    <span class="desc">Continuous foot traffic — could be a movement layer or partial bed</span>
+    <span class="dur">30s</span>
+    <audio controls loop src="../../../sfx/443_footsteps_on_gravel.mp3"></audio>
+  </div>
+
+  <h2>Short-loop ambients (1.5–2.25s — may loop seamlessly)</h2>
+  <div class="row">
+    <span class="name">030_sukkah_ambiance</span>
+    <span class="desc">Tent dwelling ambience (sukkah is a temporary tent)</span>
+    <span class="dur">2.25s</span>
+    <audio controls loop src="../../../sfx/030_sukkah_ambiance.mp3"></audio>
+  </div>
+  <div class="row">
+    <span class="name">392_desert_oasis</span>
+    <span class="desc">Desert oasis ambience</span>
+    <span class="dur">2.25s</span>
+    <audio controls loop src="../../../sfx/392_desert_oasis.mp3"></audio>
+  </div>
+  <div class="row">
+    <span class="name">037_desert_wind</span>
+    <span class="desc">Wind layer (use only when weather state calls for it)</span>
+    <span class="dur">1.5s</span>
+    <audio controls loop src="../../../sfx/037_desert_wind.mp3"></audio>
+  </div>
+  <div class="row">
+    <span class="name">381_tent_interior_wind</span>
+    <span class="desc">Inside-tent perspective wind</span>
+    <span class="dur">2.25s</span>
+    <audio controls loop src="../../../sfx/381_tent_interior_wind.mp3"></audio>
+  </div>
+
+  <h2>Animal events</h2>
+  <div class="row"><span class="name">062_donkey_braying</span><span class="desc">Donkey vocalization</span><span class="dur">2.0s</span><audio controls src="../../../sfx/062_donkey_braying.mp3"></audio></div>
+  <div class="row"><span class="name">063_camel_caravan</span><span class="desc">Camel caravan</span><span class="dur">1.5s</span><audio controls src="../../../sfx/063_camel_caravan.mp3"></audio></div>
+  <div class="row"><span class="name">064_sheep_flock</span><span class="desc">Sheep flock</span><span class="dur">1.5s</span><audio controls src="../../../sfx/064_sheep_flock.mp3"></audio></div>
+  <div class="row"><span class="name">065_goat_bleating</span><span class="desc">Goat bleating</span><span class="dur">4.0s</span><audio controls src="../../../sfx/065_goat_bleating.mp3"></audio></div>
+  <div class="row"><span class="name">369_donkey_hooves_walking</span><span class="desc">Hooves on ground</span><span class="dur">2.25s</span><audio controls src="../../../sfx/369_donkey_hooves_walking.mp3"></audio></div>
+
+  <h2>People / voices</h2>
+  <div class="row"><span class="name">008_congregation_murmur</span><span class="desc">Group murmur (could double as distant settlement voices)</span><span class="dur">3.0s</span><audio controls src="../../../sfx/008_congregation_murmur.mp3"></audio></div>
+  <div class="row"><span class="name">089_single_laugh_male</span><span class="desc">Male laugh</span><span class="dur">0.5s</span><audio controls src="../../../sfx/089_single_laugh_male.mp3"></audio></div>
+  <div class="row"><span class="name">090_single_laugh_female</span><span class="desc">Female laugh</span><span class="dur">2.0s</span><audio controls src="../../../sfx/090_single_laugh_female.mp3"></audio></div>
+  <div class="row"><span class="name">093_large_group_laughter</span><span class="desc">Group laughter</span><span class="dur">2.0s</span><audio controls src="../../../sfx/093_large_group_laughter.mp3"></audio></div>
+  <div class="row"><span class="name">454_baby_crying</span><span class="desc">Baby crying — encampment had families</span><span class="dur">30s</span><audio controls src="../../../sfx/454_baby_crying.mp3"></audio></div>
+
+  <h2>Domestic / movement</h2>
+  <div class="row"><span class="name">078_grain_grinding</span><span class="desc">Grinding stone — staple food prep</span><span class="dur">5.0s</span><audio controls src="../../../sfx/078_grain_grinding.mp3"></audio></div>
+  <div class="row"><span class="name">377_pouring_water_from_jug</span><span class="desc">Water pour</span><span class="dur">1.0s</span><audio controls src="../../../sfx/377_pouring_water_from_jug.mp3"></audio></div>
+  <div class="row"><span class="name">013_kiddush_cup_pour</span><span class="desc">Cup pour (small vessel)</span><span class="dur">~2s</span><audio controls src="../../../sfx/013_kiddush_cup_pour.mp3"></audio></div>
+  <div class="row"><span class="name">316_water_jug_filling</span><span class="desc">Filling water jug</span><span class="dur">~2s</span><audio controls src="../../../sfx/316_water_jug_filling.mp3"></audio></div>
+  <div class="row"><span class="name">150_robes_rustling_walk</span><span class="desc">Robe/cloth rustle while walking</span><span class="dur">1.0s</span><audio controls src="../../../sfx/150_robes_rustling_walk.mp3"></audio></div>
+  <div class="row"><span class="name">415_hammer_on_wood_carpentry</span><span class="desc">Wood work</span><span class="dur">~2s</span><audio controls src="../../../sfx/415_hammer_on_wood_carpentry.mp3"></audio></div>
+
+  <div class="gate good" style="margin-top:2em">
+    <h2 style="margin-top:0">Decision points</h2>
+    <p style="margin:.3em 0">After listening, the questions to answer are:</p>
+    <ul>
+      <li>Does <code>453_crowd_whispering</code> work as the base bed (30s loop, distant voices)?</li>
+      <li>Or does <code>030_sukkah_ambiance</code> / <code>392_desert_oasis</code> short-loop work?</li>
+      <li>If neither: we generate one calm bed (440 credits).</li>
+      <li>Are the events (animals, voices, water, etc.) the kind of content we'd want to scatter? Any obvious gaps?</li>
+    </ul>
+  </div>
+</body>
+</html>

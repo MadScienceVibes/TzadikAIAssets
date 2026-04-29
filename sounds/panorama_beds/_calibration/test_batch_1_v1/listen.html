@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Test batch 1 v1 — QC</title>
+<style>
+  body{font:14px/1.5 -apple-system,system-ui,sans-serif;max-width:840px;margin:1.5em auto;padding:0 1em;color:#222}
+  h1{font-size:18px;margin-bottom:.2em}
+  h2{font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:#444;margin:1.5em 0 .4em 0}
+  .meta{color:#666;font-size:13px;margin-bottom:1.5em}
+  .panel{border:1px solid #ddd;border-radius:8px;padding:1em 1.25em;margin:1em 0;background:#fafafa}
+  .panel.gate{background:#fffbe6;border-color:#f0d57a}
+  audio{width:100%;margin-top:.4em}
+  pre{background:#f4f4f4;padding:.6em .8em;border-radius:4px;font-size:12px;white-space:pre-wrap;color:#333}
+  .stats{font:12px monospace;color:#888;margin-top:.5em}
+  .gate-test{font-size:13px;color:#444;margin-top:.6em}
+</style>
+</head>
+<body>
+  <h1>Test batch 1 v1 — listen and verdict</h1>
+  <div class="meta">
+    4 generations, 1,760 credits total. All normalized to ~−22 LUFS. Each in its own _v1 directory; nothing overwritten.<br/>
+    Goal: validate the canonical grammar produces good content across 4 different categories before scaling up.
+  </div>
+
+  <div class="panel gate">
+    <h2 style="margin-top:0">1. Heavy rain (replacing cut 032 — was nail-gun-mechanical)</h2>
+    <div class="gate-test">Listen for: dense continuous water on surfaces, no mechanical/percussive feel, no nail-gun rhythm.</div>
+    <audio controls loop src="../heavy_rain_v1/processed_v1.mp3"></audio>
+    <div class="stats">source −14.9 LUFS · −7.1 dB attenuated · output −22.5 LUFS</div>
+    <pre>Heavy rainfall on outdoor stone pavement and rooftops at midday, listener standing under shelter near the edge, continuous dense water hitting hard and soft surfaces, sparse splashes from running water, occasional gusts of wind through rain, broad open-sky reverb, intense and saturating, no thunder, no music, seamless ambient loop</pre>
+  </div>
+
+  <div class="panel gate">
+    <h2 style="margin-top:0">2. Cicada chorus daytime (replacing 371 — was buzzy and indistinguishable from crickets)</h2>
+    <div class="gate-test">Listen for: SUSTAINED mechanical/electronic-feeling whine, NO discrete chirp pulses, dense continuous drone.<br/>
+    A/B against item 3 — they should sound clearly different (sustained vs. rhythmic).</div>
+    <audio controls loop src="../cicada_chorus_daytime_v1/processed_v1.mp3"></audio>
+    <div class="stats">source −6.7 LUFS (very loud — model confident) · −15.3 dB attenuated · output −22.4 LUFS</div>
+    <pre>Hot Mediterranean summer afternoon outdoor scene, listener standing in olive grove, sustained continuous high-frequency mechanical whine of cicada chorus filling the air close and far, no rhythmic pulses, dense daytime drone almost electronic in character, peak energy in upper midrange, warm dry air, midday under bright sun, no individual chirps audible, no birds, no wind, no music, seamless ambient loop</pre>
+  </div>
+
+  <div class="panel gate">
+    <h2 style="margin-top:0">3. Cricket chorus night (replacing 040 — same buzzy problem as cicadas)</h2>
+    <div class="gate-test">Listen for: DISCRETE rhythmic chirps with audible gaps between pulses, lower frequency than cicadas.<br/>
+    A/B against item 2 — should sound clearly different.</div>
+    <audio controls loop src="../cricket_chorus_night_v1/processed_v1.mp3"></audio>
+    <div class="stats">source −11.3 LUFS · −10.7 dB attenuated · output −22.3 LUFS</div>
+    <pre>Warm summer night in countryside grass field, listener standing in open air, discrete rhythmic chirps from many crickets at varied distances with audible gaps between pulses, lower-frequency than cicadas, multiple individuals not synchronized, sparse rustle of grass, soft cool night air, distant occasional owl far off, no human presence, no wind, no music, seamless ambient loop</pre>
+  </div>
+
+  <div class="panel gate">
+    <h2 style="margin-top:0">4. Distant village murmur (replacing cut 453 — was indoor-harsh)</h2>
+    <div class="gate-test">Listen for: outdoor open-air feel, distant unintelligible voice wash, edge-of-perception (not foreground), warm.</div>
+    <audio controls loop src="../distant_village_murmur_v1/processed_v1.mp3"></audio>
+    <div class="stats">source −34.2 LUFS (quieter — distant content) · +12.2 dB amplified · output −22.2 LUFS</div>
+    <pre>Open outdoor space at midday with a small ancient settlement at distance, listener standing in open air a hundred meters from the village edge, continuous very faint blended wash of distant unintelligible adult voices and movement, occasional far-off cart or animal blended into ambience, warm dry mid-afternoon air, broad open-air reverb, edge of perception, no foreground voices, no music, seamless ambient loop</pre>
+  </div>
+
+  <div class="panel">
+    <h2 style="margin-top:0">Decision per file</h2>
+    <p>For each of the 4: <b>pass</b> (use as-is, ship to bank), <b>tweak</b> (regenerate with prompt revision), or <b>fail</b> (model can't produce this kind of content cleanly, different approach).</p>
+    <p>If 3+ pass on first try, the canonical grammar is validated and we scale up. If 2+ fail, prompt grammar needs more iteration before scaling.</p>
+  </div>
+</body>
+</html>

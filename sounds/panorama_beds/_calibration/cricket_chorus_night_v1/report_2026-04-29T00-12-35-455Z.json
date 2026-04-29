@@ -1,0 +1,22 @@
+{
+  "archetype": "cricket_chorus_night_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/cricket_chorus_night_v1.txt",
+  "prompt_text": "Warm summer night in countryside grass field, listener standing in open air, discrete rhythmic chirps from many crickets at varied distances with audible gaps between pulses, lower-frequency than cicadas, multiple individuals not synchronized, sparse rustle of grass, soft cool night air, distant occasional owl far off, no human presence, no wind, no music, seamless ambient loop",
+  "prompt_length": 380,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T00:12:42.147Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777421562146-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/cricket_chorus_night_v1/take_1.mp3"
+    }
+  ]
+}

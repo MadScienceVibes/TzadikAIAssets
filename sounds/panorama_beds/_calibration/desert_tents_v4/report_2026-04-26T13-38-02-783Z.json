@@ -1,0 +1,22 @@
+{
+  "archetype": "desert_tents_v4",
+  "prompt_file": "scripts/elevenlabs/prompts/desert_tents_v4.txt",
+  "prompt_text": "Open desert space at midday, listener standing in vast empty dry air with no movement, dry baked earth all around, expansive open-sky acoustic with no enclosure, complete stillness, no wind, no breeze, no animals, no insects, no birds, no voices, no music, no events, no rattling, no creaks, no rustles, seamless ambient loop",
+  "prompt_length": 325,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-26T13:38:08.688Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777210688683-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/desert_tents_v4/take_1.mp3"
+    }
+  ]
+}

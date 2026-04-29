@@ -1,0 +1,22 @@
+{
+  "archetype": "desert_tents_v5",
+  "prompt_file": "scripts/elevenlabs/prompts/desert_tents_v5.txt",
+  "prompt_text": "Open desert encampment with canvas tents on dry sandy earth, listener standing among the tents, soft sustained low atmospheric drone of vast open hot air, distant heat-baked dryness blended into ambience, midday under bright sun, restrained and still, no wind, no breeze, no animals, no insects, no voices, no music, seamless ambient loop",
+  "prompt_length": 338,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-26T15:22:26.509Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777216946507-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/desert_tents_v5/take_1.mp3"
+    }
+  ]
+}

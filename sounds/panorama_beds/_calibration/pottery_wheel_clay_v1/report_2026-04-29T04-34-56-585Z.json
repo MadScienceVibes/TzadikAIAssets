@@ -1,0 +1,22 @@
+{
+  "archetype": "pottery_wheel_clay_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/pottery_wheel_clay_v1.txt",
+  "prompt_text": "Potter's wheel turning with wet clay, rhythmic whir of the wheel and characteristic squelch of fingers shaping wet clay, occasional water dip, close perspective, no voices, no music, seamless ambient loop",
+  "prompt_length": 204,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-04-29T04:35:00.924Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437300923-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/pottery_wheel_clay_v1/take_1.mp3"
+    }
+  ]
+}

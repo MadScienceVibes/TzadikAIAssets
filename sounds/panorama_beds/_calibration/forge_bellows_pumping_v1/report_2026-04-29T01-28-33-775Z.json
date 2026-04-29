@@ -1,0 +1,22 @@
+{
+  "archetype": "forge_bellows_pumping_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/forge_bellows_pumping_v1.txt",
+  "prompt_text": "Blacksmith pumping leather bellows to fan a forge fire, rhythmic deep whoosh of air being pushed and the soft sigh of the bellows reopening, close perspective, no voices, no music, seamless ambient loop",
+  "prompt_length": 202,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-04-29T01:28:37.532Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777426117531-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/forge_bellows_pumping_v1/take_1.mp3"
+    }
+  ]
+}

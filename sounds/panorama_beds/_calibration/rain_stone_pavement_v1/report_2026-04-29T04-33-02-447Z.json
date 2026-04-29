@@ -1,0 +1,22 @@
+{
+  "archetype": "rain_stone_pavement_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/rain_stone_pavement_v1.txt",
+  "prompt_text": "Steady moderate rain falling on outdoor stone pavement, distinctive splash-and-pool sound of drops hitting wet stone surface with water running into joints, sustained continuous texture, no thunder, no music, seamless ambient loop",
+  "prompt_length": 230,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T04:33:08.191Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437188191-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/rain_stone_pavement_v1/take_1.mp3"
+    }
+  ]
+}

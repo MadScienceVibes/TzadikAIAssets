@@ -1,0 +1,22 @@
+{
+  "archetype": "yad_tapping_torah_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/yad_tapping_torah_v1.txt",
+  "prompt_text": "Silver yad pointer tapping lightly on parchment of an open torah scroll, two soft metallic tap sounds with slight scroll resonance, close perspective, no voices, no music",
+  "prompt_length": 170,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-04-29T01:28:16.402Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777426096401-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/yad_tapping_torah_v1/take_1.mp3"
+    }
+  ]
+}

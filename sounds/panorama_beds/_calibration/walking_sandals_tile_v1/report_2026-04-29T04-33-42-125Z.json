@@ -1,0 +1,22 @@
+{
+  "archetype": "walking_sandals_tile_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/walking_sandals_tile_v1.txt",
+  "prompt_text": "Continuous walking with leather sandals on glazed ceramic tile floor indoors, sharp clack of sandal soles on hard tile with brief slight echo, varied stride pacing, no voices, no music, seamless ambient loop",
+  "prompt_length": 207,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-04-29T04:33:45.994Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437225992-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/walking_sandals_tile_v1/take_1.mp3"
+    }
+  ]
+}

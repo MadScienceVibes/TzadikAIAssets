@@ -1,0 +1,22 @@
+{
+  "archetype": "anchor_chain_dropping_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/anchor_chain_dropping_v1.txt",
+  "prompt_text": "Heavy iron anchor chain dropping rapidly through a hawsepipe, fast metallic clattering of chain links rushing past with end splash into water, close perspective, no voices, no music",
+  "prompt_length": 181,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-04-29T04:34:27.703Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437267702-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/anchor_chain_dropping_v1/take_1.mp3"
+    }
+  ]
+}

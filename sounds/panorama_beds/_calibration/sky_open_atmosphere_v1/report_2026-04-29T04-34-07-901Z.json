@@ -1,0 +1,22 @@
+{
+  "archetype": "sky_open_atmosphere_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/sky_open_atmosphere_v1.txt",
+  "prompt_text": "Open sky high above the earth, deep continuous low atmospheric rumble of vast airspace, very faint hint of wind movement at altitude, abstract spacious texture, no birds, no aircraft, no music, seamless ambient loop",
+  "prompt_length": 215,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T04:34:13.552Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437253550-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/sky_open_atmosphere_v1/take_1.mp3"
+    }
+  ]
+}

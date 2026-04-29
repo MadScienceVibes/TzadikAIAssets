@@ -1,0 +1,22 @@
+{
+  "archetype": "calf_bleat_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/calf_bleat_v1.txt",
+  "prompt_text": "Single young calf bleating, soft high-pitched moo, brief quaver, close perspective, no other animals, no human presence, no music",
+  "prompt_length": 129,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-04-29T01:26:36.922Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777425996920-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/calf_bleat_v1/take_1.mp3"
+    }
+  ]
+}

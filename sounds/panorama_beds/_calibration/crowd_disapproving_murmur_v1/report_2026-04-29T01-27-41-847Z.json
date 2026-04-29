@@ -1,0 +1,22 @@
+{
+  "archetype": "crowd_disapproving_murmur_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/crowd_disapproving_murmur_v1.txt",
+  "prompt_text": "Group of about twenty adults murmuring disapprovingly, low blended grumbling voices and head-shaking quiet protests, no clear words, indoor moderate-distance perspective, no music",
+  "prompt_length": 179,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-04-29T01:27:45.656Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777426065655-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/crowd_disapproving_murmur_v1/take_1.mp3"
+    }
+  ]
+}

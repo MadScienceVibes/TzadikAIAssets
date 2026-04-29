@@ -1,0 +1,22 @@
+{
+  "archetype": "forest_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/forest_v3.txt",
+  "prompt_text": "Lively summer woodland in midday sun, dense and active bird chorus close and far including warblers chickadees and wrens, gentle leaf shimmer from foliage settling, occasional acorn fall and twig crackle on dry ground, distant woodpecker tapping, soft insect drone weaving through branches, calm still forest air, no wind, no voices, no music, seamless ambient loop",
+  "prompt_length": 365,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-25T21:47:15.291Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777153635290-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/forest_v3/take_1.mp3"
+    }
+  ]
+}

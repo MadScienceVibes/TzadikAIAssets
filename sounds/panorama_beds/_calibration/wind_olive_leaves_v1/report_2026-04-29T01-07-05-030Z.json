@@ -1,0 +1,22 @@
+{
+  "archetype": "wind_olive_leaves_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/wind_olive_leaves_v1.txt",
+  "prompt_text": "Steady gentle wind blowing through silvery olive tree leaves outdoors, characteristic rustling shimmer of small narrow leaves rubbing together, sustained continuous texture, no birds, no animals, no music, seamless ambient loop",
+  "prompt_length": 227,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T01:07:10.675Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777424830674-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/wind_olive_leaves_v1/take_1.mp3"
+    }
+  ]
+}

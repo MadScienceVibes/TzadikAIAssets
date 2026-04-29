@@ -1,0 +1,22 @@
+{
+  "archetype": "bread_tearing_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/bread_tearing_v1.txt",
+  "prompt_text": "Hands tearing a fresh crusty loaf of bread in half, organic crumble of crust breaking apart with soft inner crumb stretching, close perspective, brief breath behind the hands, no voices, no music",
+  "prompt_length": 195,
+  "duration_seconds": 4,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 80,
+  "ran_at": "2026-04-29T01:05:55.202Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777424755201-1",
+      "http_status": 200,
+      "credits_charged": 80,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 97846,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/bread_tearing_v1/take_1.mp3"
+    }
+  ]
+}

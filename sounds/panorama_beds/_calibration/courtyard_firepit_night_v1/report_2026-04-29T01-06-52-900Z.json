@@ -1,0 +1,22 @@
+{
+  "archetype": "courtyard_firepit_night_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/courtyard_firepit_night_v1.txt",
+  "prompt_text": "Small enclosed stone courtyard at night with a wood fire close to the listener, steady warm crackling and popping of burning wood, occasional ember crack and small log shift, gentle cool night air around the courtyard walls, no voices, no insects, no music, seamless ambient loop",
+  "prompt_length": 279,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T01:06:58.709Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777424818708-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/courtyard_firepit_night_v1/take_1.mp3"
+    }
+  ]
+}

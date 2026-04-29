@@ -1,0 +1,22 @@
+{
+  "archetype": "forest",
+  "prompt_file": "scripts/elevenlabs/prompts/forest_v1.txt",
+  "prompt_text": "Continuous deciduous forest ambience in mid-morning, light breeze through tree canopy, broadband leaf rustle, multiple distant bird species at varied distances, occasional creak of branches, sparse twig and soft foliage movement on the ground, natural open-canopy reverb, no voices, no human presence, no machinery, no music, no foreground events, seamless ambient loop",
+  "prompt_length": 369,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-25T03:52:40.319Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777089160318-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/forest/take_1.mp3"
+    }
+  ]
+}

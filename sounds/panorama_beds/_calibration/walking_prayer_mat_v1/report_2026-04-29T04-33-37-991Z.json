@@ -1,0 +1,22 @@
+{
+  "archetype": "walking_prayer_mat_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/walking_prayer_mat_v1.txt",
+  "prompt_text": "Continuous walking on a thick prayer mat indoors, very soft muffled padding of bare feet on woven wool, gentle interior reverb, no voices, no music, seamless ambient loop",
+  "prompt_length": 170,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-04-29T04:33:41.836Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437221835-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/walking_prayer_mat_v1/take_1.mp3"
+    }
+  ]
+}

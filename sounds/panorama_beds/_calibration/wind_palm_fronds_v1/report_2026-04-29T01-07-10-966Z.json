@@ -1,0 +1,22 @@
+{
+  "archetype": "wind_palm_fronds_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/wind_palm_fronds_v1.txt",
+  "prompt_text": "Steady wind blowing through tall palm tree fronds outdoors, distinct rattling sound of long stiff palm leaves clattering and brushing against each other, sustained continuous texture, no birds, no animals, no music, seamless ambient loop",
+  "prompt_length": 237,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T01:07:16.720Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777424836719-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/wind_palm_fronds_v1/take_1.mp3"
+    }
+  ]
+}

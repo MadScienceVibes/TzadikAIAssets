@@ -1,0 +1,22 @@
+{
+  "archetype": "distant_village_murmur_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/distant_village_murmur_v1.txt",
+  "prompt_text": "Open outdoor space at midday with a small ancient settlement at distance, listener standing in open air a hundred meters from the village edge, continuous very faint blended wash of distant unintelligible adult voices and movement, occasional far-off cart or animal blended into ambience, warm dry mid-afternoon air, broad open-air reverb, edge of perception, no foreground voices, no music, seamless ambient loop",
+  "prompt_length": 413,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T00:12:48.865Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777421568864-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/distant_village_murmur_v1/take_1.mp3"
+    }
+  ]
+}

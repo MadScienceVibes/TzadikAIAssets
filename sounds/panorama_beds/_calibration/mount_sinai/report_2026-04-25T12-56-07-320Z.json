@@ -1,0 +1,22 @@
+{
+  "archetype": "mount_sinai",
+  "prompt_file": "scripts/elevenlabs/prompts/mount_sinai_v1.txt",
+  "prompt_text": "Vast windswept rocky mountaintop at midday, steady dry wind whistling across exposed limestone and granite outcroppings, scattered loose pebbles shifting in the breeze, occasional distant raven cry now and then, fine grit and sand drifting between rocks, wide open sky with no enclosure, dry hot mountain air, no voices, no music, seamless ambient loop",
+  "prompt_length": 352,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-25T12:56:13.423Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777121773421-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/mount_sinai/take_1.mp3"
+    }
+  ]
+}

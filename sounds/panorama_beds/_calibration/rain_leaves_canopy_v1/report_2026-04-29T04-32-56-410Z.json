@@ -1,0 +1,22 @@
+{
+  "archetype": "rain_leaves_canopy_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/rain_leaves_canopy_v1.txt",
+  "prompt_text": "Steady moderate rain falling through a dense leafy tree canopy, soft pattering of drops hitting countless broad leaves with occasional larger drops accumulating and falling through, lush outdoor texture, no thunder, no music, seamless ambient loop",
+  "prompt_length": 247,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T04:33:02.169Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777437182168-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/rain_leaves_canopy_v1/take_1.mp3"
+    }
+  ]
+}

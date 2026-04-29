@@ -1,0 +1,22 @@
+{
+  "archetype": "congregation_murmur_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/congregation_murmur_v1.txt",
+  "prompt_text": "Group of about thirty adult men in a synagogue prayer hall at moderate distance, blended murmur of overlapping prayer voices in low quiet tones, soft footsteps and bench creaks, warm interior reverb, no foreground solo voice, no music, seamless ambient loop",
+  "prompt_length": 257,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-29T01:06:08.471Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777424768470-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/congregation_murmur_v1/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "single_male_laugh_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/single_male_laugh_v1.txt",
+  "prompt_text": "Single adult male laughing genuinely, three to four pulses of warm chest-deep laughter ending in a soft exhale, no words, no music, close perspective, natural recording",
+  "prompt_length": 168,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-04-29T00:54:23.356Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777424063355-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/single_male_laugh_v1/take_1.mp3"
+    }
+  ]
+}

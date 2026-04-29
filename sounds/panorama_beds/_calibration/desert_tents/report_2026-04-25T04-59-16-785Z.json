@@ -1,0 +1,22 @@
+{
+  "archetype": "desert_tents",
+  "prompt_file": "scripts/elevenlabs/prompts/desert_tents_v1.txt",
+  "prompt_text": "Wide open desert at midday, steady warm wind across loose sand and dunes, soft canvas tent fabric flapping nearby in the breeze, occasional rope creak and tent stake settling, distant goat bleat now and then, fine grains of sand drifting across the ground, dry hot air with wide-open spatial feel, no voices, no music, seamless ambient loop",
+  "prompt_length": 340,
+  "duration_seconds": 22,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 440,
+  "ran_at": "2026-04-25T04:59:22.472Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777093162470-1",
+      "http_status": 200,
+      "credits_charged": 440,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 529807,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/desert_tents/take_1.mp3"
+    }
+  ]
+}
