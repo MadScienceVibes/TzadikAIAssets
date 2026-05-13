@@ -1,0 +1,22 @@
+{
+  "archetype": "cafeteria_busy_close_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/cafeteria_busy_close_v1.txt",
+  "prompt_text": "Busy school or institutional cafeteria at lunchtime, dense voice wash of dozens of people eating and chatting with tray clattering and silverware on plates and chair scraping, close perspective indoor, no specific words, no music, seamless ambient loop",
+  "prompt_length": 252,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T03:27:51.044Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606071042-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/cafeteria_busy_close_v1/take_1.mp3"
+    }
+  ]
+}

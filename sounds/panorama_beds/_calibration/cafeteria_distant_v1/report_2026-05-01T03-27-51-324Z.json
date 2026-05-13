@@ -1,0 +1,22 @@
+{
+  "archetype": "cafeteria_distant_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/cafeteria_distant_v1.txt",
+  "prompt_text": "Cafeteria activity heard from middle distance through a doorway, muffled blend of voices and dish sounds with slight reverb from down a hallway, mid-distance perspective, no specific words, no music, seamless ambient loop",
+  "prompt_length": 221,
+  "duration_seconds": 12,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 240,
+  "ran_at": "2026-05-01T03:27:55.731Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606075728-1",
+      "http_status": 200,
+      "credits_charged": 240,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 289689,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/cafeteria_distant_v1/take_1.mp3"
+    }
+  ]
+}

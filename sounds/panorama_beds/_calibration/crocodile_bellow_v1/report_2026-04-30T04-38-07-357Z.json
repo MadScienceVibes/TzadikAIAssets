@@ -1,0 +1,22 @@
+{
+  "archetype": "crocodile_bellow_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/crocodile_bellow_v1.txt",
+  "prompt_text": "Single Nile crocodile bellowing aggressively, low rumbling territorial roar with deep bass character, close perspective at riverbank, no other animals, no human presence, no music",
+  "prompt_length": 179,
+  "duration_seconds": 4,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 80,
+  "ran_at": "2026-04-30T04:38:10.359Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777523890358-1",
+      "http_status": 200,
+      "credits_charged": 80,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 97846,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/crocodile_bellow_v1/take_1.mp3"
+    }
+  ]
+}

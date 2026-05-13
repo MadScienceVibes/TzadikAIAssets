@@ -1,0 +1,22 @@
+{
+  "archetype": "fish_flop_splash_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/fish_flop_splash_v1.txt",
+  "prompt_text": "Single large fish flopping out of water and splashing back, sharp slap of fish body on water surface with brief thrashing splash, close perspective at lake, no voices, no music",
+  "prompt_length": 176,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-04-30T04:38:22.629Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777523902628-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/fish_flop_splash_v1/take_1.mp3"
+    }
+  ]
+}

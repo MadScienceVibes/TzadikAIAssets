@@ -1,0 +1,22 @@
+{
+  "archetype": "dragging_heavy_bag_stone_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/dragging_heavy_bag_stone_v1.txt",
+  "prompt_text": "Heavy duffel bag being dragged across stone floor indoors, sustained scraping rumble of fabric on hard stone with slight echo, close perspective indoor, no voices, no music",
+  "prompt_length": 172,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-05-01T03:28:35.460Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606115459-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/dragging_heavy_bag_stone_v1/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "dusk_birds_settling_insects_starting_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/dusk_birds_settling_insects_starting_v1.txt",
+  "prompt_text": "Transition from dusk to evening outdoors, daytime birds settling into roosts with first crickets and night insects beginning to chirp, soft cooling air, mid-distance perspective, no voices, no music, seamless ambient loop",
+  "prompt_length": 221,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T03:22:53.335Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605773334-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/dusk_birds_settling_insects_starting_v1/take_1.mp3"
+    }
+  ]
+}

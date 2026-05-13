@@ -1,0 +1,22 @@
+{
+  "archetype": "cow_lowing_field_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/cow_lowing_field_v1.txt",
+  "prompt_text": "Single adult cow lowing in an open field outdoors, deep sustained moo with slight quiver, close perspective, two calls separated by brief pause, no other animals, no human presence, no music",
+  "prompt_length": 190,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:12:07.734Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608727733-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/cow_lowing_field_v3/take_1.mp3"
+    }
+  ]
+}

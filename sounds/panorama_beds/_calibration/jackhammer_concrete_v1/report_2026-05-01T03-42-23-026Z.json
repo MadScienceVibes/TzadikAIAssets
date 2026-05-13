@@ -1,0 +1,22 @@
+{
+  "archetype": "jackhammer_concrete_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/jackhammer_concrete_v1.txt",
+  "prompt_text": "Pneumatic jackhammer breaking up concrete, rapid percussive metallic hammering with concrete dust and chunks falling, close perspective outdoor, no voices, no music",
+  "prompt_length": 164,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-05-01T03:42:27.547Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606947547-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/jackhammer_concrete_v1/take_1.mp3"
+    }
+  ]
+}

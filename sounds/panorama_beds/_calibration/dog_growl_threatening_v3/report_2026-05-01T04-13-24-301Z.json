@@ -1,0 +1,22 @@
+{
+  "archetype": "dog_growl_threatening_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/dog_growl_threatening_v1.txt",
+  "prompt_text": "Single large dog growling threateningly, deep guttural sustained growl with bared-teeth quality, close perspective, no other animals, no voices, no music",
+  "prompt_length": 153,
+  "duration_seconds": 4,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 80,
+  "ran_at": "2026-05-01T04:13:27.197Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608807197-1",
+      "http_status": 200,
+      "credits_charged": 80,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 97846,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/dog_growl_threatening_v3/take_1.mp3"
+    }
+  ]
+}

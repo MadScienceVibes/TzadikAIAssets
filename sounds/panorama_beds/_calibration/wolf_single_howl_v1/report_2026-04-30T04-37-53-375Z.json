@@ -1,0 +1,22 @@
+{
+  "archetype": "wolf_single_howl_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/wolf_single_howl_v1.txt",
+  "prompt_text": "Single timber wolf howling from middle distance outdoors at night, sustained mournful howl with characteristic vibrato and falling pitch at end, mid-distance perspective in cold wilderness, no other animals, no human presence, no music",
+  "prompt_length": 235,
+  "duration_seconds": 4,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 80,
+  "ran_at": "2026-04-30T04:37:56.558Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777523876558-1",
+      "http_status": 200,
+      "credits_charged": 80,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 97846,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/wolf_single_howl_v1/take_1.mp3"
+    }
+  ]
+}

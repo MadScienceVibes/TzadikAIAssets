@@ -1,0 +1,22 @@
+{
+  "archetype": "pigeon_flutter_takeoff_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/pigeon_flutter_takeoff_v1.txt",
+  "prompt_text": "Group of pigeons taking off in flight, sudden burst of rapid wing flapping as several birds launch into air together, close perspective at urban plaza, no voices, no music",
+  "prompt_length": 171,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:21:22.500Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609282499-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/pigeon_flutter_takeoff_v2/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "heavy_stone_falling_ground_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/heavy_stone_falling_ground_v1.txt",
+  "prompt_text": "Massive stone block falling and impacting hard ground, deep concussive thud with stone fragments and dust whoosh, close perspective, no voices, no music",
+  "prompt_length": 152,
+  "duration_seconds": 4,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 80,
+  "ran_at": "2026-05-01T04:17:33.760Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609053760-1",
+      "http_status": 200,
+      "credits_charged": 80,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 97846,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/heavy_stone_falling_ground_v3/take_1.mp3"
+    }
+  ]
+}

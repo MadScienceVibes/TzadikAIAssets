@@ -1,0 +1,22 @@
+{
+  "archetype": "cough_light_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/cough_light_v1.txt",
+  "prompt_text": "Single adult man coughing lightly, brief polite throat-clearing cough repeated twice, close perspective, no words, no music",
+  "prompt_length": 123,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:12:00.422Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608720422-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/cough_light_v3/take_1.mp3"
+    }
+  ]
+}

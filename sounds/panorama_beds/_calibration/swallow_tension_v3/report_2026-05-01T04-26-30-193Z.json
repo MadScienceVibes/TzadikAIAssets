@@ -1,0 +1,22 @@
+{
+  "archetype": "swallow_tension_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/swallow_tension_v1.txt",
+  "prompt_text": "Single adult swallowing audibly under tension, brief gulp with throat sound, close perspective, no words, no music",
+  "prompt_length": 114,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:26:32.695Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609592694-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/swallow_tension_v3/take_1.mp3"
+    }
+  ]
+}

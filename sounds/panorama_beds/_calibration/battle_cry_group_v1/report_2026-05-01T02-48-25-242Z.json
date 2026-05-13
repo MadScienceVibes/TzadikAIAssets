@@ -1,0 +1,22 @@
+{
+  "archetype": "battle_cry_group_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/battle_cry_group_v1.txt",
+  "prompt_text": "Group of about fifty warriors shouting battle cry in unison, deep guttural collective roar of male voices building and sustained, close perspective, no specific words, no music",
+  "prompt_length": 176,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-05-01T02:48:29.133Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777603709132-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/battle_cry_group_v1/take_1.mp3"
+    }
+  ]
+}

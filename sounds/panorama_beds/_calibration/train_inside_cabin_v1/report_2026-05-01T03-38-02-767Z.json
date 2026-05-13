@@ -1,0 +1,22 @@
+{
+  "archetype": "train_inside_cabin_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/train_inside_cabin_v1.txt",
+  "prompt_text": "Inside a moving passenger train cabin, rhythmic clack of wheels on rails with sustained mechanical rumble and occasional brake adjustment, close perspective indoor, no voices, no music, seamless ambient loop",
+  "prompt_length": 207,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T03:38:07.792Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606687791-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/train_inside_cabin_v1/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "dragging_heavy_bag_dirt_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/dragging_heavy_bag_dirt_v1.txt",
+  "prompt_text": "Heavy duffel bag being dragged across packed dirt outdoors, sustained scraping rumble of fabric on dry ground with strain pulls, close perspective, no voices, no music",
+  "prompt_length": 167,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-05-01T03:28:26.935Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606106933-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/dragging_heavy_bag_dirt_v1/take_1.mp3"
+    }
+  ]
+}

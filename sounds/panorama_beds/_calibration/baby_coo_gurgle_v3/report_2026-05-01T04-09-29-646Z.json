@@ -1,0 +1,22 @@
+{
+  "archetype": "baby_coo_gurgle_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/baby_coo_gurgle_v1.txt",
+  "prompt_text": "Single happy baby cooing and gurgling, soft babble of contented baby vocalizations, close perspective, no other voices, no music",
+  "prompt_length": 128,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:09:32.768Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608572768-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/baby_coo_gurgle_v3/take_1.mp3"
+    }
+  ]
+}

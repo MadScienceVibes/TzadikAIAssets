@@ -1,0 +1,22 @@
+{
+  "archetype": "eastern_parkway_traffic_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/eastern_parkway_traffic_v1.txt",
+  "prompt_text": "Busy New York avenue at midday, continuous wash of cars and trucks passing with occasional honking and bus engines, mid-distance perspective from sidewalk, no specific voices, no music, seamless ambient loop",
+  "prompt_length": 207,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T03:20:44.738Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605644737-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/eastern_parkway_traffic_v1/take_1.mp3"
+    }
+  ]
+}

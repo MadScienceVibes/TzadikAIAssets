@@ -1,0 +1,22 @@
+{
+  "archetype": "subway_doors_opening_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/subway_doors_opening_v1.txt",
+  "prompt_text": "Subway car doors opening, distinctive chime followed by pneumatic hiss and door slide, close perspective at platform, no voices, no music",
+  "prompt_length": 137,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T03:20:39.524Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605639523-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/subway_doors_opening_v1/take_1.mp3"
+    }
+  ]
+}

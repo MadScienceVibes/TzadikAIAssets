@@ -1,0 +1,22 @@
+{
+  "archetype": "group_humming_slow_melody_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/group_humming_slow_melody_v1.txt",
+  "prompt_text": "Group of about ten adults humming a slow contemplative melody together, sustained wordless harmonized hum with gentle pace, close perspective indoor, no specific words, no instruments, no music backing",
+  "prompt_length": 201,
+  "duration_seconds": 12,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 240,
+  "ran_at": "2026-05-01T03:36:06.660Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606566660-1",
+      "http_status": 200,
+      "credits_charged": 240,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 289689,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/group_humming_slow_melody_v1/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "basketball_bouncing_court_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/basketball_bouncing_court_v1.txt",
+  "prompt_text": "Single basketball being bounced on hardwood court, rhythmic resonant thump of inflated rubber ball striking wooden floor with brief catch and bounce again, close perspective indoor, no voices, no music",
+  "prompt_length": 201,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T03:28:39.956Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606119955-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/basketball_bouncing_court_v1/take_1.mp3"
+    }
+  ]
+}

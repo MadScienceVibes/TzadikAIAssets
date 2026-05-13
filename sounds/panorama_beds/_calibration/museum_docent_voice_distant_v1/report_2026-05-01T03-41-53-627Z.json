@@ -1,0 +1,22 @@
+{
+  "archetype": "museum_docent_voice_distant_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/museum_docent_voice_distant_v1.txt",
+  "prompt_text": "Museum docent giving a tour from middle distance, single adult voice speaking with measured educational cadence with slight hall reverb, mid-distance perspective indoor, no specific words audible, no music",
+  "prompt_length": 205,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-05-01T03:41:57.553Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606917551-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/museum_docent_voice_distant_v1/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "heavy_iron_chains_rattling_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/heavy_iron_chains_rattling_v1.txt",
+  "prompt_text": "Heavy iron chains being shaken and rattled, sustained deep metallic clanking of large chain links striking each other, close perspective, no voices, no music",
+  "prompt_length": 157,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:17:08.109Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609028109-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/heavy_iron_chains_rattling_v2/take_1.mp3"
+    }
+  ]
+}

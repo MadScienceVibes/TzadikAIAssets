@@ -1,0 +1,22 @@
+{
+  "archetype": "stork_bill_clatter_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/stork_bill_clatter_v1.txt",
+  "prompt_text": "Single white stork clattering its bill rapidly, characteristic rattling castanet-like sound from beak rapid tapping together, close perspective at nest, no voices, no music",
+  "prompt_length": 172,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:26:01.860Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609561860-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/stork_bill_clatter_v3/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "eagle_dive_attack_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/eagle_dive_attack_v1.txt",
+  "prompt_text": "Single eagle diving for prey, sharp piercing scream followed by rapid wing-rush descent and brief grab impact, close perspective outdoors, no voices, no music",
+  "prompt_length": 158,
+  "duration_seconds": 4,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 80,
+  "ran_at": "2026-05-01T04:13:43.909Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608823909-1",
+      "http_status": 200,
+      "credits_charged": 80,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 97846,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/eagle_dive_attack_v2/take_1.mp3"
+    }
+  ]
+}

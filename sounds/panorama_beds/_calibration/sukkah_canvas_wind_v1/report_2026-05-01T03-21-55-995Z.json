@@ -1,0 +1,22 @@
+{
+  "archetype": "sukkah_canvas_wind_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/sukkah_canvas_wind_v1.txt",
+  "prompt_text": "Canvas walls of a sukkah flapping in moderate wind outdoors, sustained snap of fabric pulling taut and slack repeatedly with rope creaking, close perspective inside the sukkah, no voices, no music, seamless ambient loop",
+  "prompt_length": 219,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T03:22:00.002Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605720001-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/sukkah_canvas_wind_v1/take_1.mp3"
+    }
+  ]
+}

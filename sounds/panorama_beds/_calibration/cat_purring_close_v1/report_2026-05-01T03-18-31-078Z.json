@@ -1,0 +1,22 @@
+{
+  "archetype": "cat_purring_close_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/cat_purring_close_v1.txt",
+  "prompt_text": "Single contented cat purring in the listener's lap, sustained warm rumbling purr with rhythmic breath behind it, close perspective, no other animals, no voices, no music, seamless ambient loop",
+  "prompt_length": 192,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-05-01T03:18:34.892Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605514891-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/cat_purring_close_v1/take_1.mp3"
+    }
+  ]
+}

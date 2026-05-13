@@ -1,0 +1,22 @@
+{
+  "archetype": "factory_press_stamping_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/factory_press_stamping_v1.txt",
+  "prompt_text": "Industrial factory press stamping metal parts, rhythmic deep mechanical stamp followed by hydraulic release and conveyor advance, close perspective indoor, no voices, no music, seamless ambient loop",
+  "prompt_length": 198,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-05-01T03:42:31.731Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606951731-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/factory_press_stamping_v1/take_1.mp3"
+    }
+  ]
+}

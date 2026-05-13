@@ -1,0 +1,22 @@
+{
+  "archetype": "scream_anger_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/scream_anger_v1.txt",
+  "prompt_text": "Single adult man screaming in rage, full-throated angry roar with growl quality, close perspective, no specific words, no music",
+  "prompt_length": 127,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T01:31:50.912Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777599110911-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/scream_anger_v1/take_1.mp3"
+    }
+  ]
+}

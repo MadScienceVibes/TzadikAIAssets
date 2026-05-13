@@ -1,0 +1,22 @@
+{
+  "archetype": "wasp_angry_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/wasp_angry_v1.txt",
+  "prompt_text": "Single angry wasp buzzing aggressively, sharp irritated buzz with rising pitch, close perspective, no other animals, no human presence, no music",
+  "prompt_length": 144,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:27:14.351Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609634351-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/wasp_angry_v2/take_1.mp3"
+    }
+  ]
+}

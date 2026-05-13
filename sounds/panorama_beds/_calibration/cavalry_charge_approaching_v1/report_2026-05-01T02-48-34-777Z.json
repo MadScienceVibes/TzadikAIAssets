@@ -1,0 +1,22 @@
+{
+  "archetype": "cavalry_charge_approaching_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/cavalry_charge_approaching_v1.txt",
+  "prompt_text": "Large cavalry charge of about thirty horses galloping at full speed approaching the listener, thunderous mass of pounding hooves with metal armor jangling and battle cries, mid-distance perspective, no music",
+  "prompt_length": 207,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T02:48:38.908Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777603718908-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/cavalry_charge_approaching_v1/take_1.mp3"
+    }
+  ]
+}

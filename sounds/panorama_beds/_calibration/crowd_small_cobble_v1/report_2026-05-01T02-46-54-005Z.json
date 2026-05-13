@@ -1,0 +1,22 @@
+{
+  "archetype": "crowd_small_cobble_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/crowd_small_cobble_v1.txt",
+  "prompt_text": "Small group of about eight adults walking together on cobblestone street outdoors, blended sharp clicks of leather soles on uneven stone with overlapping pacing, sparse muffled voice tones, mid-distance perspective, no specific words, no music, seamless ambient loop",
+  "prompt_length": 266,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T02:46:58.205Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777603618204-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/crowd_small_cobble_v1/take_1.mp3"
+    }
+  ]
+}

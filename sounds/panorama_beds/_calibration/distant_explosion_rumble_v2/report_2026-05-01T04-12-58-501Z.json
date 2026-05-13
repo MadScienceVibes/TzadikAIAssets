@@ -1,0 +1,22 @@
+{
+  "archetype": "distant_explosion_rumble_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/distant_explosion_rumble_v1.txt",
+  "prompt_text": "Large explosion from middle distance outdoors, deep low rumbling boom carried across open ground with delayed reverb tail, mid-distance perspective, no voices, no music",
+  "prompt_length": 168,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:13:01.916Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608781916-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/distant_explosion_rumble_v2/take_1.mp3"
+    }
+  ]
+}

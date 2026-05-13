@@ -1,0 +1,22 @@
+{
+  "archetype": "arrow_volley_release_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/arrow_volley_release_v1.txt",
+  "prompt_text": "Group of about fifty archers releasing arrows simultaneously, sharp synchronized whoosh of many bowstrings releasing followed by collective whistling of arrows in flight, mid-distance perspective, no voices, no music",
+  "prompt_length": 216,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:09:22.373Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608562372-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/arrow_volley_release_v2/take_1.mp3"
+    }
+  ]
+}

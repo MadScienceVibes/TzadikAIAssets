@@ -1,0 +1,22 @@
+{
+  "archetype": "bus_pulling_up_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/bus_pulling_up_v1.txt",
+  "prompt_text": "City bus pulling up to a stop, deep diesel engine slowing with brake squeal and hydraulic kneeling hiss, close perspective at curb, no voices, no music",
+  "prompt_length": 151,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T03:21:00.847Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605660847-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/bus_pulling_up_v1/take_1.mp3"
+    }
+  ]
+}

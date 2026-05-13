@@ -1,0 +1,22 @@
+{
+  "archetype": "fizzy_drink_opening_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/fizzy_drink_opening_v1.txt",
+  "prompt_text": "Carbonated drink can being opened, brief metallic snap of pull tab followed by sustained hiss of pressurized gas escaping, close perspective indoor, no voices, no music",
+  "prompt_length": 168,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:14:22.916Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608862915-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/fizzy_drink_opening_v3/take_1.mp3"
+    }
+  ]
+}

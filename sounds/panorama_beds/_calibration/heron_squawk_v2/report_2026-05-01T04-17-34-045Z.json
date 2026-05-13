@@ -1,0 +1,22 @@
+{
+  "archetype": "heron_squawk_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/heron_squawk_v1.txt",
+  "prompt_text": "Single great heron squawking loudly, harsh raspy call followed by wing flap as bird takes flight, close perspective at water's edge, no other animals, no human presence, no music",
+  "prompt_length": 178,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:17:37.736Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609057735-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/heron_squawk_v2/take_1.mp3"
+    }
+  ]
+}

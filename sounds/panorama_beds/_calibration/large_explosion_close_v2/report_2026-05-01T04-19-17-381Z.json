@@ -1,0 +1,22 @@
+{
+  "archetype": "large_explosion_close_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/large_explosion_close_v1.txt",
+  "prompt_text": "Large explosion close to listener, sharp deafening blast with deep concussive boom and debris falling and ringing aftermath, close perspective, no voices, no music",
+  "prompt_length": 163,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:19:20.676Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609160675-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/large_explosion_close_v2/take_1.mp3"
+    }
+  ]
+}

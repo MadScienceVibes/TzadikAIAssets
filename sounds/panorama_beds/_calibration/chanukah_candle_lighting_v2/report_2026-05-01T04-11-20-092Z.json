@@ -1,0 +1,22 @@
+{
+  "archetype": "chanukah_candle_lighting_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/chanukah_candle_lighting_v1.txt",
+  "prompt_text": "Chanukah menorah candle being lit with shamash candle, sharp match strike followed by wick catching and sustained gentle flame crackle, close perspective indoor, no voices, no music",
+  "prompt_length": 181,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:11:23.407Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608683406-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/chanukah_candle_lighting_v2/take_1.mp3"
+    }
+  ]
+}

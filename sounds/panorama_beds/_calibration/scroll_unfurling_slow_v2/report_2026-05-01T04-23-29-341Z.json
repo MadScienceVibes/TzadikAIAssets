@@ -1,0 +1,22 @@
+{
+  "archetype": "scroll_unfurling_slow_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/scroll_unfurling_slow_v1.txt",
+  "prompt_text": "Long parchment scroll being slowly unfurled by hand, sustained gentle paper rustle with soft creaking of the wooden scroll rollers, close perspective, no voices, no music",
+  "prompt_length": 170,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:23:32.728Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609412727-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/scroll_unfurling_slow_v2/take_1.mp3"
+    }
+  ]
+}

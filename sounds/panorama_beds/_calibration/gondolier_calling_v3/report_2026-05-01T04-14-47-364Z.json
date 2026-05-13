@@ -1,0 +1,22 @@
+{
+  "archetype": "gondolier_calling_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/gondolier_calling_v1.txt",
+  "prompt_text": "Single Venetian gondolier calling out warning as he navigates a canal, distinctive sustained vocal call carried on water with brief oar splash, mid-distance perspective on canal, no other voices, no music",
+  "prompt_length": 204,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:14:50.856Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608890856-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/gondolier_calling_v3/take_1.mp3"
+    }
+  ]
+}

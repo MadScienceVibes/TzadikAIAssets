@@ -1,0 +1,22 @@
+{
+  "archetype": "heartbeat_dying_slow_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/heartbeat_dying_slow_v1.txt",
+  "prompt_text": "Slow weakening human heartbeat as life ebbs away, deep slow thumps with longer gaps between beats and gradual fading, close perspective interior body sound, no other sounds, no music",
+  "prompt_length": 182,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-05-01T03:29:04.621Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606144620-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/heartbeat_dying_slow_v1/take_1.mp3"
+    }
+  ]
+}

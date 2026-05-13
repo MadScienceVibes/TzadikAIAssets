@@ -1,0 +1,20 @@
+{
+  "archetype": "crowd_murmur_italian_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/crowd_murmur_italian_v1.txt",
+  "prompt_text": "Crowd of about thirty Italian-speaking adults murmuring in conversation, blended Italian language voice wash with characteristic melodic Italian intonation, mid-distance perspective, no specific words, no music, seamless ambient loop",
+  "prompt_length": 233,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 0,
+  "ran_at": "2026-05-01T03:27:17.367Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606037367-1",
+      "http_status": 429,
+      "error": "{\"detail\":{\"type\":\"rate_limit_error\",\"code\":\"system_busy\",\"message\":\"We are sorry, the system is experiencing heavy traffic, please try again.\",\"status\":\"system_busy\",\"request_id\":\"4286ad0a9603ae46d4e76b281cd6a475\",\"docs_url\":\"https://elevenlabs.io/docs/eleven-api/resources/errors#rate-limiting-and-concurrency\"}}",
+      "credits_charged": null
+    }
+  ]
+}

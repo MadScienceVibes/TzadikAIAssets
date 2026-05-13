@@ -1,0 +1,22 @@
+{
+  "archetype": "single_sheep_bleat_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/single_sheep_bleat_v1.txt",
+  "prompt_text": "Single adult sheep bleating, one clear baa with slight quiver, close perspective, no other animals, no human presence, no music",
+  "prompt_length": 127,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:25:06.287Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609506287-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/single_sheep_bleat_v2/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "tibetan_temple_gong_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/tibetan_temple_gong_v1.txt",
+  "prompt_text": "Single large Tibetan temple gong struck once, deep resonant bass tone with sustained shimmering harmonics fading slowly, close perspective indoors, no voices, no music",
+  "prompt_length": 167,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T03:19:52.804Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605592803-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/tibetan_temple_gong_v1/take_1.mp3"
+    }
+  ]
+}

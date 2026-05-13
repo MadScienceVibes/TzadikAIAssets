@@ -1,0 +1,22 @@
+{
+  "archetype": "ram_bleat_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/ram_bleat_v1.txt",
+  "prompt_text": "Single adult ram bleating, deep gravelly baa with characteristic male sheep timbre, close perspective, no other animals, no human presence, no music",
+  "prompt_length": 148,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:21:48.355Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609308355-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/ram_bleat_v3/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "wedding_celebration_distant_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/wedding_celebration_distant_v1.txt",
+  "prompt_text": "Joyful Jewish wedding celebration from middle distance, blended klezmer music and dancing footsteps with happy crowd voices and tambourine, mid-distance perspective outdoors, no specific words, no music",
+  "prompt_length": 202,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T03:22:15.673Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605735672-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/wedding_celebration_distant_v1/take_1.mp3"
+    }
+  ]
+}

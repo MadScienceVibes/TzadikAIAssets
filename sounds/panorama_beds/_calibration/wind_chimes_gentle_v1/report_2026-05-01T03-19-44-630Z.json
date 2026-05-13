@@ -1,0 +1,22 @@
+{
+  "archetype": "wind_chimes_gentle_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/wind_chimes_gentle_v1.txt",
+  "prompt_text": "Set of wind chimes gently moving in light breeze, soft random tinkling of small metal tubes striking each other in varied notes, close perspective outdoors, no voices, no music, seamless ambient loop",
+  "prompt_length": 199,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T03:19:48.600Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605588600-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/wind_chimes_gentle_v1/take_1.mp3"
+    }
+  ]
+}

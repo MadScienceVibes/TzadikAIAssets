@@ -1,0 +1,22 @@
+{
+  "archetype": "crane_lifting_modern_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/crane_lifting_modern_v1.txt",
+  "prompt_text": "Modern construction crane lifting heavy load, sustained mechanical winch motor whir with cable tension creak and slight metal sway, mid-distance perspective outdoor, no voices, no music",
+  "prompt_length": 185,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T03:42:22.749Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606942747-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/crane_lifting_modern_v1/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "heavy_door_echoing_close_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/heavy_door_echoing_close_v1.txt",
+  "prompt_text": "Massive heavy wooden door slamming shut in a stone hall, deep wood thud with sustained reverb echoing through the hall, close perspective indoors, no voices, no music",
+  "prompt_length": 166,
+  "duration_seconds": 4,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 80,
+  "ran_at": "2026-05-01T04:17:04.582Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609024582-1",
+      "http_status": 200,
+      "credits_charged": 80,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 97846,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/heavy_door_echoing_close_v3/take_1.mp3"
+    }
+  ]
+}

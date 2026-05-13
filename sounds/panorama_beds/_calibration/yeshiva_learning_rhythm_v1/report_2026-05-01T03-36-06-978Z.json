@@ -1,0 +1,22 @@
+{
+  "archetype": "yeshiva_learning_rhythm_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/yeshiva_learning_rhythm_v1.txt",
+  "prompt_text": "Yeshiva study hall with paired students learning Talmud, blended back-and-forth rhythmic Hebrew and Aramaic discussion voices with characteristic singsong study cadence, mid-distance perspective indoor, no specific words audible, no music, seamless ambient loop",
+  "prompt_length": 261,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T03:36:11.924Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606571922-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/yeshiva_learning_rhythm_v1/take_1.mp3"
+    }
+  ]
+}

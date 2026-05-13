@@ -1,0 +1,22 @@
+{
+  "archetype": "workers_chanting_cadence_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/workers_chanting_cadence_v1.txt",
+  "prompt_text": "Group of about fifty laborers chanting work song in rhythmic cadence outdoors, sustained rhythmic male voices in unison with claps and hand thumps providing tempo, mid-distance perspective, no specific words, no music, seamless ambient loop",
+  "prompt_length": 240,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T02:48:57.048Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777603737047-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/workers_chanting_cadence_v1/take_1.mp3"
+    }
+  ]
+}

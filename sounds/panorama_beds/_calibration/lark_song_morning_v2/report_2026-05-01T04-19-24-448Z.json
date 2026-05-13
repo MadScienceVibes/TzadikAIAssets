@@ -1,0 +1,22 @@
+{
+  "archetype": "lark_song_morning_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/lark_song_morning_v1.txt",
+  "prompt_text": "Single skylark singing in morning above an open field outdoors, sustained melodic warbling song with continuous trills and varied notes, broad open-air perspective from below, no other birds, no human presence, no music",
+  "prompt_length": 219,
+  "duration_seconds": 6,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 120,
+  "ran_at": "2026-05-01T04:19:27.951Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609167951-1",
+      "http_status": 200,
+      "credits_charged": 120,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 145493,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/lark_song_morning_v2/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "schach_rustling_sukkah_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/schach_rustling_sukkah_v1.txt",
+  "prompt_text": "Sukkah palm-frond roof rustling in a gentle breeze outdoors, characteristic dry rustling clatter of stiff palm fronds laid as sukkah covering, close perspective inside the sukkah, no voices, no music, seamless ambient loop",
+  "prompt_length": 222,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T03:21:55.690Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605715689-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/schach_rustling_sukkah_v1/take_1.mp3"
+    }
+  ]
+}

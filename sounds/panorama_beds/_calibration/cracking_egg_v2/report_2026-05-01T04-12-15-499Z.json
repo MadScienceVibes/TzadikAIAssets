@@ -1,0 +1,22 @@
+{
+  "archetype": "cracking_egg_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/cracking_egg_v1.txt",
+  "prompt_text": "Single egg being cracked on edge of bowl and contents pouring in, brief sharp shell crack followed by liquid yolk and white falling into bowl, close perspective indoor, no voices, no music",
+  "prompt_length": 188,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:12:18.941Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608738941-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/cracking_egg_v2/take_1.mp3"
+    }
+  ]
+}

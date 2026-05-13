@@ -1,0 +1,22 @@
+{
+  "archetype": "dolphin_clicks_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/dolphin_clicks_v1.txt",
+  "prompt_text": "Group of dolphins echolocating close, rapid sequence of high-frequency clicks and brief whistle calls, close perspective at surface, no other animals, no music",
+  "prompt_length": 159,
+  "duration_seconds": 4,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 80,
+  "ran_at": "2026-05-01T04:13:30.456Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608810456-1",
+      "http_status": 200,
+      "credits_charged": 80,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 97846,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/dolphin_clicks_v2/take_1.mp3"
+    }
+  ]
+}

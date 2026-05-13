@@ -1,0 +1,22 @@
+{
+  "archetype": "kingfisher_dive_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/kingfisher_dive_v1.txt",
+  "prompt_text": "Single kingfisher diving into water, brief flash of wing whirr followed by sharp splash entry into water and quick emerge, close perspective at calm river, no other animals, no music",
+  "prompt_length": 182,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:19:05.411Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609145411-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/kingfisher_dive_v2/take_1.mp3"
+    }
+  ]
+}

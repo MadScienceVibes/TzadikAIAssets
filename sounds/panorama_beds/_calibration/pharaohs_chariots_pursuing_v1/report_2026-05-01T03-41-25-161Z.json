@@ -1,0 +1,22 @@
+{
+  "archetype": "pharaohs_chariots_pursuing_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/pharaohs_chariots_pursuing_v1.txt",
+  "prompt_text": "Group of about ten ancient Egyptian war chariots pursuing at full speed across desert ground, thundering mass of horse hooves on hard earth with metal armor jangling and chariot wheels rolling fast, mid-distance perspective, no voices, no music",
+  "prompt_length": 244,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T03:41:29.409Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606889408-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/pharaohs_chariots_pursuing_v1/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "twilight_first_owls_bats_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/twilight_first_owls_bats_v1.txt",
+  "prompt_text": "Late twilight outdoors with night beginning, first owl hoot in the distance with bat wing flutter overhead and ongoing cricket chorus, cool evening air, mid-distance perspective, no voices, no music, seamless ambient loop",
+  "prompt_length": 221,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T03:22:58.674Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605778673-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/twilight_first_owls_bats_v1/take_1.mp3"
+    }
+  ]
+}

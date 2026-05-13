@@ -1,0 +1,22 @@
+{
+  "archetype": "quill_dipping_ink_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/quill_dipping_ink_v1.txt",
+  "prompt_text": "Goose quill being dipped into a glass inkwell, soft liquid plip with brief tap of quill on rim, close perspective, no voices, no music",
+  "prompt_length": 134,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:21:36.861Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609296860-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/quill_dipping_ink_v2/take_1.mp3"
+    }
+  ]
+}

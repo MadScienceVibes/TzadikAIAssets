@@ -1,0 +1,22 @@
+{
+  "archetype": "whisper_close_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/whisper_close_v1.txt",
+  "prompt_text": "Single adult voice whispering close to the listener, soft urgent breath-driven speech, close perspective, no specific intelligible words, no music",
+  "prompt_length": 146,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T01:32:05.364Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777599125363-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/whisper_close_v1/take_1.mp3"
+    }
+  ]
+}

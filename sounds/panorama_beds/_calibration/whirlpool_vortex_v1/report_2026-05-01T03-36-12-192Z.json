@@ -1,0 +1,22 @@
+{
+  "archetype": "whirlpool_vortex_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/whirlpool_vortex_v1.txt",
+  "prompt_text": "Powerful whirlpool spinning in a body of water, sustained roaring rush of water spiraling rapidly with deep gurgling vortex sound, close perspective at edge, no voices, no music",
+  "prompt_length": 177,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T03:36:16.141Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606576139-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/whirlpool_vortex_v1/take_1.mp3"
+    }
+  ]
+}

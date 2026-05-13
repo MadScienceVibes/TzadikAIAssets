@@ -1,0 +1,22 @@
+{
+  "archetype": "old_town_clock_chiming_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/old_town_clock_chiming_v1.txt",
+  "prompt_text": "Prague old town astronomical clock chiming the hour, distinctive sequential tone progression with mechanical wooden figures moving, close perspective at base of tower, no voices, no music",
+  "prompt_length": 187,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T03:21:36.219Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605696219-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/old_town_clock_chiming_v1/take_1.mp3"
+    }
+  ]
+}

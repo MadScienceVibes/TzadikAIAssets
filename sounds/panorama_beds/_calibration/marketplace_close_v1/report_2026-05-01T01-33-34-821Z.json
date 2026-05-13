@@ -1,0 +1,22 @@
+{
+  "archetype": "marketplace_close_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/marketplace_close_v1.txt",
+  "prompt_text": "Outdoor marketplace at midday with active vendors and customers nearby, blended adult voice wash close at varied perspectives, occasional cart roll and item handling, warm dry air, no foreground specific voices, no music, seamless ambient loop",
+  "prompt_length": 243,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T01:33:41.563Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777599221562-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/marketplace_close_v1/take_1.mp3"
+    }
+  ]
+}

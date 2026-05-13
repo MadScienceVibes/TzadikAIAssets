@@ -1,0 +1,22 @@
+{
+  "archetype": "heavy_book_being_opened_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/heavy_book_being_opened_v1.txt",
+  "prompt_text": "Heavy leather-bound ancient book being opened, deep creak of leather binding stretching with paper rustle as pages spread, close perspective on table, no voices, no music",
+  "prompt_length": 170,
+  "duration_seconds": 4,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 80,
+  "ran_at": "2026-05-01T03:22:24.266Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605744266-1",
+      "http_status": 200,
+      "credits_charged": 80,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 97846,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/heavy_book_being_opened_v1/take_1.mp3"
+    }
+  ]
+}

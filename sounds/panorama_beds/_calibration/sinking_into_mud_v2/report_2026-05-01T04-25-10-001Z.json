@@ -1,0 +1,22 @@
+{
+  "archetype": "sinking_into_mud_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/sinking_into_mud_v1.txt",
+  "prompt_text": "Foot or object slowly sinking into thick wet mud, sustained sucking squelch with bubbles rising and breaking, close perspective, no voices, no music",
+  "prompt_length": 148,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:25:13.306Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609513305-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/sinking_into_mud_v2/take_1.mp3"
+    }
+  ]
+}

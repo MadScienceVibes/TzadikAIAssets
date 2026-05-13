@@ -1,0 +1,22 @@
+{
+  "archetype": "landslide_rocks_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/landslide_rocks_v1.txt",
+  "prompt_text": "Major landslide of rocks and boulders cascading down a mountainside, sustained rumbling crash of stones tumbling and breaking against each other, mid-distance perspective, no voices, no music",
+  "prompt_length": 191,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-05-01T03:18:17.517Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605497516-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/landslide_rocks_v1/take_1.mp3"
+    }
+  ]
+}

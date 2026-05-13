@@ -1,0 +1,22 @@
+{
+  "archetype": "boat_capsizing_water_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/boat_capsizing_water_v1.txt",
+  "prompt_text": "Wooden boat capsizing into water, sharp wood splash as hull flips followed by sustained water rushing into the overturned vessel, close perspective on water, no voices, no music",
+  "prompt_length": 177,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-05-01T03:36:35.193Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606595190-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/boat_capsizing_water_v1/take_1.mp3"
+    }
+  ]
+}

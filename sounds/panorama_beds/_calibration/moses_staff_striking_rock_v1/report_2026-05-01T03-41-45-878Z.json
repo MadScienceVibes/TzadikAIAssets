@@ -1,0 +1,22 @@
+{
+  "archetype": "moses_staff_striking_rock_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/moses_staff_striking_rock_v1.txt",
+  "prompt_text": "Wooden staff striking solid rock with force, sharp percussive impact of wood on stone followed by brief silence then water rushing forth, close perspective outdoor, no voices, no music",
+  "prompt_length": 184,
+  "duration_seconds": 4,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 80,
+  "ran_at": "2026-05-01T03:41:48.997Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606908996-1",
+      "http_status": 200,
+      "credits_charged": 80,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 97846,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/moses_staff_striking_rock_v1/take_1.mp3"
+    }
+  ]
+}

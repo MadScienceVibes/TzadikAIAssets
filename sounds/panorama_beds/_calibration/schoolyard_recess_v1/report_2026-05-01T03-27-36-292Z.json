@@ -1,0 +1,22 @@
+{
+  "archetype": "schoolyard_recess_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/schoolyard_recess_v1.txt",
+  "prompt_text": "School playground at recess with about fifty children playing outdoors, blended high-pitched children voices laughing and shouting with running footsteps and ball bouncing, mid-distance perspective, no specific words, no music, seamless ambient loop",
+  "prompt_length": 249,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T03:27:41.285Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606061283-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/schoolyard_recess_v1/take_1.mp3"
+    }
+  ]
+}

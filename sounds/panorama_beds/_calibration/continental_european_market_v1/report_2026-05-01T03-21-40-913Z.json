@@ -1,0 +1,22 @@
+{
+  "archetype": "continental_european_market_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/continental_european_market_v1.txt",
+  "prompt_text": "Continental European outdoor market at midday, blended European language chatter of vendors and customers with occasional bicycle bell and shop awning flap, mid-distance perspective, no music, seamless ambient loop",
+  "prompt_length": 214,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T03:21:45.988Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605705987-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/continental_european_market_v1/take_1.mp3"
+    }
+  ]
+}

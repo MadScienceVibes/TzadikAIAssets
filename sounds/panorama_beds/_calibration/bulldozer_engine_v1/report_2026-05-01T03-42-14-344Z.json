@@ -1,0 +1,22 @@
+{
+  "archetype": "bulldozer_engine_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/bulldozer_engine_v1.txt",
+  "prompt_text": "Modern bulldozer running at construction site, sustained deep diesel engine rumble with hydraulic whine and tracks moving on dirt, close perspective outdoor, no voices, no music",
+  "prompt_length": 177,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T03:42:18.231Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606938229-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/bulldozer_engine_v1/take_1.mp3"
+    }
+  ]
+}

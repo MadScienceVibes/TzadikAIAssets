@@ -1,0 +1,22 @@
+{
+  "archetype": "megillah_scroll_opening_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/megillah_scroll_opening_v1.txt",
+  "prompt_text": "Esther scroll being opened slowly by hand, sustained gentle parchment unrolling with brief wooden roller creak as scroll unfurls, close perspective indoor, no voices, no music",
+  "prompt_length": 175,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:19:47.199Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609187199-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/megillah_scroll_opening_v3/take_1.mp3"
+    }
+  ]
+}

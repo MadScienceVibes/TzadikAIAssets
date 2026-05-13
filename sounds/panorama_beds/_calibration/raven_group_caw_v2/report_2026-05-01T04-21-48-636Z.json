@@ -1,0 +1,22 @@
+{
+  "archetype": "raven_group_caw_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/raven_group_caw_v1.txt",
+  "prompt_text": "Group of about eight ravens cawing from middle distance outdoors, overlapping harsh dry caws and rattle calls from high in trees or on a rocky cliff, sparse wing flutter, mid-distance perspective, no other animals, no human presence, no music",
+  "prompt_length": 242,
+  "duration_seconds": 6,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 120,
+  "ran_at": "2026-05-01T04:21:52.244Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609312243-1",
+      "http_status": 200,
+      "credits_charged": 120,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 145493,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/raven_group_caw_v2/take_1.mp3"
+    }
+  ]
+}

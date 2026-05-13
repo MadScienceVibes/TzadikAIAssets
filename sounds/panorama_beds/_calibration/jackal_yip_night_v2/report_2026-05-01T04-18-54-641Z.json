@@ -1,0 +1,22 @@
+{
+  "archetype": "jackal_yip_night_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/jackal_yip_night_v1.txt",
+  "prompt_text": "Group of jackals yipping at night outdoors, overlapping high-pitched yipping calls and short howls, mid-distance perspective in dry savanna, no other animals, no human presence, no music",
+  "prompt_length": 186,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:18:58.060Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609138059-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/jackal_yip_night_v2/take_1.mp3"
+    }
+  ]
+}

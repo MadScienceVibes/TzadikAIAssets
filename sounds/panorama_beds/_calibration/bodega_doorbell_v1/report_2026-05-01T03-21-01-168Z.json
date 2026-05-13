@@ -1,0 +1,22 @@
+{
+  "archetype": "bodega_doorbell_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/bodega_doorbell_v1.txt",
+  "prompt_text": "Small bodega shop door opening with bell, brief metallic jingle of small bell on hinge, close perspective at entrance, no voices, no music",
+  "prompt_length": 138,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T03:21:04.500Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605664500-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/bodega_doorbell_v1/take_1.mp3"
+    }
+  ]
+}

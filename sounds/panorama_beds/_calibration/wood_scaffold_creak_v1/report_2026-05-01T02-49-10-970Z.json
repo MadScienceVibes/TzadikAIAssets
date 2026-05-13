@@ -1,0 +1,22 @@
+{
+  "archetype": "wood_scaffold_creak_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/wood_scaffold_creak_v1.txt",
+  "prompt_text": "Tall wooden construction scaffold under load, sustained creaking of wood timbers under weight with occasional sharp pop and rope strain, mid-distance perspective, no voices, no music, seamless ambient loop",
+  "prompt_length": 205,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T02:49:14.939Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777603754937-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/wood_scaffold_creak_v1/take_1.mp3"
+    }
+  ]
+}

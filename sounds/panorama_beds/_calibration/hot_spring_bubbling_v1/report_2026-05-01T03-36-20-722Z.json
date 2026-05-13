@@ -1,0 +1,22 @@
+{
+  "archetype": "hot_spring_bubbling_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/hot_spring_bubbling_v1.txt",
+  "prompt_text": "Natural hot spring bubbling continuously outdoors, sustained gentle gurgle and bubble pop of mineral-rich hot water at the surface, close perspective, no voices, no music, seamless ambient loop",
+  "prompt_length": 193,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T03:36:25.705Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606585704-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/hot_spring_bubbling_v1/take_1.mp3"
+    }
+  ]
+}

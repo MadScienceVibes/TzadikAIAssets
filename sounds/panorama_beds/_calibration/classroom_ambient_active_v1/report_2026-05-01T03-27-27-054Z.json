@@ -1,0 +1,22 @@
+{
+  "archetype": "classroom_ambient_active_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/classroom_ambient_active_v1.txt",
+  "prompt_text": "Classroom with about twenty-five elementary school students at moderate activity, blended children chatter with teacher voice rising occasionally and pencil scratching on paper and chair shifting, close perspective, no specific words, no music, seamless ambient loop",
+  "prompt_length": 266,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T03:27:36.011Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606056011-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/classroom_ambient_active_v1/take_1.mp3"
+    }
+  ]
+}

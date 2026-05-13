@@ -1,0 +1,22 @@
+{
+  "archetype": "audience_hushed_before_song_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/audience_hushed_before_song_v1.txt",
+  "prompt_text": "Audience of about three hundred falling completely silent in anticipation before a song begins, sparse last cough and program rustle settling into expectant hush, mid-distance perspective indoor, no music",
+  "prompt_length": 204,
+  "duration_seconds": 10,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 200,
+  "ran_at": "2026-05-01T03:42:14.074Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606934072-1",
+      "http_status": 200,
+      "credits_charged": 200,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 241415,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/audience_hushed_before_song_v1/take_1.mp3"
+    }
+  ]
+}

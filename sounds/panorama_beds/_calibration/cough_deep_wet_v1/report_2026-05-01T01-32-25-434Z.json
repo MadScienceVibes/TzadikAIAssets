@@ -1,0 +1,22 @@
+{
+  "archetype": "cough_deep_wet_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/cough_deep_wet_v1.txt",
+  "prompt_text": "Single adult man coughing deeply with wet phlegm, hacking productive cough, close perspective, no words, no music",
+  "prompt_length": 113,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T01:32:28.129Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777599148129-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/cough_deep_wet_v1/take_1.mp3"
+    }
+  ]
+}

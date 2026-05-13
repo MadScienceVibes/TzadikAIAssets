@@ -1,0 +1,22 @@
+{
+  "archetype": "crowd_large_dirt_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/crowd_large_dirt_v1.txt",
+  "prompt_text": "Large crowd of about a hundred people walking together on dirt path outdoors, massive blended soft thuds of overlapping feet on packed earth, broad voice wash with occasional individual call, mid-distance perspective, no specific words, no music, seamless ambient loop",
+  "prompt_length": 268,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T02:47:28.237Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777603648235-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/crowd_large_dirt_v1/take_1.mp3"
+    }
+  ]
+}

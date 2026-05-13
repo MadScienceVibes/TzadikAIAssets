@@ -1,0 +1,22 @@
+{
+  "archetype": "woodpecker_pecking_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/woodpecker_pecking_v1.txt",
+  "prompt_text": "Single woodpecker drumming hard on dry wood, rhythmic rapid hammering with sharp resonant taps on the tree trunk, brief pause then resumes, close perspective, no other birds, no human presence, no music",
+  "prompt_length": 202,
+  "duration_seconds": 6,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 120,
+  "ran_at": "2026-05-01T04:28:39.290Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609719289-1",
+      "http_status": 200,
+      "credits_charged": 120,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 145493,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/woodpecker_pecking_v3/take_1.mp3"
+    }
+  ]
+}

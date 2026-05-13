@@ -1,0 +1,22 @@
+{
+  "archetype": "audio_guide_tour_murmur_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/audio_guide_tour_murmur_v1.txt",
+  "prompt_text": "Multiple museum visitors listening to audio guides at varied distances, sparse mixed voices murmuring quietly with occasional headphone leak of recorded narration, close perspective indoor, no specific words, no music, seamless ambient loop",
+  "prompt_length": 240,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-05-01T03:42:01.956Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606921954-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/audio_guide_tour_murmur_v1/take_1.mp3"
+    }
+  ]
+}

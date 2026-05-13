@@ -1,0 +1,22 @@
+{
+  "archetype": "crowd_medium_stone_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/crowd_medium_stone_v1.txt",
+  "prompt_text": "Medium-sized group of about twenty-five adults walking together on stone street outdoors, dense overlapping footstep pattern of many leather sandals on flat stone, blended diffuse voice wash, urban midday perspective, no specific words, no music, seamless ambient loop",
+  "prompt_length": 268,
+  "duration_seconds": 12,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 240,
+  "ran_at": "2026-05-01T02:47:03.840Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777603623838-1",
+      "http_status": 200,
+      "credits_charged": 240,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 289689,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/crowd_medium_stone_v1/take_1.mp3"
+    }
+  ]
+}

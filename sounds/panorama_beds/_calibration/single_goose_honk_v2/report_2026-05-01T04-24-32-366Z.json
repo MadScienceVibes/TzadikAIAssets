@@ -1,0 +1,22 @@
+{
+  "archetype": "single_goose_honk_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/single_goose_honk_v1.txt",
+  "prompt_text": "Single Canada goose honking loudly, characteristic loud nasal call repeated three times, close perspective outdoors, no other birds, no human presence, no music",
+  "prompt_length": 160,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:24:35.847Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609475847-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/single_goose_honk_v2/take_1.mp3"
+    }
+  ]
+}

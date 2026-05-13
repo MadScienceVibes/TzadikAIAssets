@@ -1,0 +1,22 @@
+{
+  "archetype": "crowd_booing_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/crowd_booing_v1.txt",
+  "prompt_text": "Group of about thirty adults booing loudly in unison, sustained disapproving call from a crowd indoors, mid-distance perspective, no music",
+  "prompt_length": 138,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:12:43.465Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608763464-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/crowd_booing_v3/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "bear_roar_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/bear_roar_v1.txt",
+  "prompt_text": "Single brown bear roaring aggressively, deep guttural roar sustained with rasp, close perspective in forest, no other animals, no human presence, no music",
+  "prompt_length": 154,
+  "duration_seconds": 4,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 80,
+  "ran_at": "2026-05-01T04:09:47.124Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608587123-1",
+      "http_status": 200,
+      "credits_charged": 80,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 97846,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/bear_roar_v3/take_1.mp3"
+    }
+  ]
+}

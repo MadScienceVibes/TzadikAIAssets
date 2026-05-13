@@ -1,0 +1,22 @@
+{
+  "archetype": "single_bat_flying_close_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/single_bat_flying_close_v1.txt",
+  "prompt_text": "Single bat flying past close to the listener, soft flutter of leathery wings with brief high-pitched echolocation chirp, close perspective at night, no other animals, no voices, no music",
+  "prompt_length": 186,
+  "duration_seconds": 4,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 80,
+  "ran_at": "2026-05-01T04:24:12.448Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609452447-1",
+      "http_status": 200,
+      "credits_charged": 80,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 97846,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/single_bat_flying_close_v2/take_1.mp3"
+    }
+  ]
+}

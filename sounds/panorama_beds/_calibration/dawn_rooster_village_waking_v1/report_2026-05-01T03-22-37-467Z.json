@@ -1,0 +1,22 @@
+{
+  "archetype": "dawn_rooster_village_waking_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/dawn_rooster_village_waking_v1.txt",
+  "prompt_text": "Dawn breaking over a small ancient village, single rooster crowing followed by soft morning bird chorus and distant first human stirrings of the day, mid-distance perspective outdoors, no specific voices, no music, seamless ambient loop",
+  "prompt_length": 236,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T03:22:42.405Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605762403-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/dawn_rooster_village_waking_v1/take_1.mp3"
+    }
+  ]
+}

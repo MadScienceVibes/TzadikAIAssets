@@ -1,0 +1,22 @@
+{
+  "archetype": "bat_swarm_cave_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/bat_swarm_cave_v1.txt",
+  "prompt_text": "Large swarm of bats flying through a cave, dense overlapping wing flutter of many bats with high-pitched squeaks echoing off cave walls, close perspective, no other animals, no voices, no music",
+  "prompt_length": 193,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-05-01T03:19:08.741Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777605548741-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/bat_swarm_cave_v1/take_1.mp3"
+    }
+  ]
+}

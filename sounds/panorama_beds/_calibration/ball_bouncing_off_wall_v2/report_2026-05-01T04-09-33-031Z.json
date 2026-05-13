@@ -1,0 +1,22 @@
+{
+  "archetype": "ball_bouncing_off_wall_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/ball_bouncing_off_wall_v1.txt",
+  "prompt_text": "Rubber ball being thrown repeatedly against a brick wall, sharp impact of ball on hard wall surface followed by bounce on ground, close perspective outdoor, no voices, no music",
+  "prompt_length": 176,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:09:36.453Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608576452-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/ball_bouncing_off_wall_v2/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "boulder_rolling_downhill_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/boulder_rolling_downhill_v1.txt",
+  "prompt_text": "Large boulder rolling and bouncing down a rocky hillside, irregular crashing impacts with dust and smaller rocks dislodged, close perspective, no voices, no music",
+  "prompt_length": 162,
+  "duration_seconds": 6,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 120,
+  "ran_at": "2026-05-01T04:09:57.680Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777608597678-1",
+      "http_status": 200,
+      "credits_charged": 120,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 145493,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/boulder_rolling_downhill_v2/take_1.mp3"
+    }
+  ]
+}

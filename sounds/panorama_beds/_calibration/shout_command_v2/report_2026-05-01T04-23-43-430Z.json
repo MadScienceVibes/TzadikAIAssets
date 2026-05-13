@@ -1,0 +1,22 @@
+{
+  "archetype": "shout_command_v2",
+  "prompt_file": "scripts/elevenlabs/prompts/shout_command_v1.txt",
+  "prompt_text": "Single adult man shouting a sharp command, authoritative loud bark, close perspective, no specific words, no music",
+  "prompt_length": 114,
+  "duration_seconds": 3,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 60,
+  "ran_at": "2026-05-01T04:23:45.931Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609425931-1",
+      "http_status": 200,
+      "credits_charged": 60,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 73395,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/shout_command_v2/take_1.mp3"
+    }
+  ]
+}

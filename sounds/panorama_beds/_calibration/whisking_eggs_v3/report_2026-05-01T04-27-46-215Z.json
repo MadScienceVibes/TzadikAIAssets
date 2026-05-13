@@ -1,0 +1,22 @@
+{
+  "archetype": "whisking_eggs_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/whisking_eggs_v1.txt",
+  "prompt_text": "Eggs being whisked in a metal bowl with a wire whisk, rapid rhythmic metal-on-bowl scraping with characteristic whisk-through-liquid sound, close perspective indoor, no voices, no music",
+  "prompt_length": 185,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:27:49.626Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609669625-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/whisking_eggs_v3/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "geyser_eruption_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/geyser_eruption_v1.txt",
+  "prompt_text": "Geyser erupting from the ground, sustained explosive hiss of pressurized water and steam shooting upward with characteristic high-pressure rush, close perspective outdoor, no voices, no music",
+  "prompt_length": 191,
+  "duration_seconds": 8,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 160,
+  "ran_at": "2026-05-01T03:36:20.440Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777606580437-1",
+      "http_status": 200,
+      "credits_charged": 160,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 193768,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/geyser_eruption_v1/take_1.mp3"
+    }
+  ]
+}

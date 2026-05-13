@@ -1,0 +1,22 @@
+{
+  "archetype": "army_marching_dirt_v1",
+  "prompt_file": "scripts/elevenlabs/prompts/army_marching_dirt_v1.txt",
+  "prompt_text": "Large army of about two hundred soldiers marching in cadence on dirt road outdoors, rhythmic synchronized thump of heavy boots on packed earth with metal armor clanking and equipment shifting, mid-distance perspective, no voices, no music, seamless ambient loop",
+  "prompt_length": 261,
+  "duration_seconds": 15,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 300,
+  "ran_at": "2026-05-01T02:47:44.098Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777603664096-1",
+      "http_status": 200,
+      "credits_charged": 300,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 361787,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/army_marching_dirt_v1/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "small_tinkling_bell_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/small_tinkling_bell_v1.txt",
+  "prompt_text": "Single small handheld bell being shook lightly, bright tinkling silver tone with rapid soft rings, close perspective, no voices, no music",
+  "prompt_length": 137,
+  "duration_seconds": 4,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 80,
+  "ran_at": "2026-05-01T04:25:24.619Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609524618-1",
+      "http_status": 200,
+      "credits_charged": 80,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 97846,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/small_tinkling_bell_v3/take_1.mp3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "archetype": "stage_curtain_opening_v3",
+  "prompt_file": "scripts/elevenlabs/prompts/stage_curtain_opening_v1.txt",
+  "prompt_text": "Heavy theater curtain opening at start of performance, sustained mechanical whoosh of fabric pulling on rails with subtle wood pulley creak, close perspective stage perspective, no voices, no music",
+  "prompt_length": 197,
+  "duration_seconds": 5,
+  "prompt_influence": 0.5,
+  "output_format": "mp3_44100_192",
+  "total_credits_charged": 100,
+  "ran_at": "2026-05-01T04:25:52.053Z",
+  "takes": [
+    {
+      "take": 1,
+      "request_id": "local-1777609552053-1",
+      "http_status": 200,
+      "credits_charged": 100,
+      "billing_header": "character-cost",
+      "returned_bytes_size": 121670,
+      "path": "/Users/gabrielgreenstein/WS/TzadikAIAssets/sounds/panorama_beds/_calibration/stage_curtain_opening_v3/take_1.mp3"
+    }
+  ]
+}
